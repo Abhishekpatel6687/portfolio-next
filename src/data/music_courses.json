@@ -1,0 +1,92 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "title": "Guitar Fundamentals",
+            "slug": "guitar-fundamentals",
+            "description": "Learn the basics of playing guitar with our comprehensive beginner courses.",
+            "price": 99.99,
+            "instructor": "John Doe",
+            "category": "Music",
+            "isFeatured": true,
+            "image": "/courses/guitar.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Python Programming 101",
+            "slug": "python-programming-101",
+            "description": "Master the foundations of Python programming for beginners.",
+            "price": 79.99,
+            "instructor": "Alice Smith",
+            "category": "Programming",
+            "isFeatured": true,
+            "image": "/courses/python.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Digital Marketing Basics",
+            "slug": "digital-marketing-basics",
+            "description": "Explore the essentials of SEO, social media, and content marketing.",
+            "price": 59.99,
+            "instructor": "Mark Lee",
+            "category": "Marketing",
+            "isFeatured": false,
+            "image": "/courses/marketing.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Photography for Beginners",
+            "slug": "photography-for-beginners",
+            "description": "Learn how to take stunning photos with any camera.",
+            "price": 49.99,
+            "instructor": "Jane Cooper",
+            "category": "Photography",
+            "isFeatured": false,
+            "image": "/courses/photography.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Personal Finance Mastery",
+            "slug": "personal-finance-mastery",
+            "description": "Develop strategies to save, invest, and grow your wealth.",
+            "price": 89.99,
+            "instructor": "Robert King",
+            "category": "Finance",
+            "isFeatured": true,
+            "image": "/courses/finance.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Yoga for Stress Relief",
+            "slug": "yoga-for-stress-relief",
+            "description": "Reduce stress and enhance well-being with easy yoga techniques.",
+            "price": 29.99,
+            "instructor": "Sophia White",
+            "category": "Health & Wellness",
+            "isFeatured": false,
+            "image": "/courses/yoga.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Creative Writing Workshop",
+            "slug": "creative-writing-workshop",
+            "description": "Unlock your creativity and craft compelling stories.",
+            "price": 69.99,
+            "instructor": "Emily Clark",
+            "category": "Writing",
+            "isFeatured": true,
+            "image": "/courses/writing.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Data Science Essentials",
+            "slug": "data-science-essentials",
+            "description": "Start your data science journey with hands-on projects and real-world examples.",
+            "price": 129.99,
+            "instructor": "Daniel Adams",
+            "category": "Data Science",
+            "isFeatured": true,
+            "image": "/courses/datascience.jpg"
+        }
+    ]
+}

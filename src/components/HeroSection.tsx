@@ -15,10 +15,7 @@ const HeroSection = () => {
         </h1>
         <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          aliquam. Numquam, deleniti? Commodi, sed quasi quisquam ipsa quod
-          quidem neque fuga! Fugiat expedita repellat earum reiciendis sapiente
-          ipsum voluptatem distinctio inventore ipsam eveniet, nobis fuga
-          adipisci totam nihil? Nihil, molestias?
+          aliquam. Numquam, deleniti? Commodi, sed quasi quisquam.
         </p>
         <div className="mt-4">
           <Link href={"/courses"}>

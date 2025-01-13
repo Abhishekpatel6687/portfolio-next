@@ -1,6 +1,7 @@
 import FeaturedCourses from '@/components/FeaturedCourses'
 import HeroSection from '@/components/HeroSection'
 import MovingCard from '@/components/MovingCard'
+import UpcommingWebinars from '@/components/UpcommingWebinars'
 import WhyChooseUS from '@/components/WhyChooseUS'
 
 const page = () => {
@@ -10,6 +11,7 @@ const page = () => {
 <FeaturedCourses/>
 <WhyChooseUS/>
 <MovingCard/>
+<UpcommingWebinars/>
    </main>
   )
 }

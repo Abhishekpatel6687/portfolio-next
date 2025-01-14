@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection'
 import MovingCard from '@/components/MovingCard'
 import UpcommingWebinars from '@/components/UpcommingWebinars'
 import WhyChooseUS from '@/components/WhyChooseUS'
+import Instructors  from '@/components/Instructors'
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
 <WhyChooseUS/>
 <MovingCard/>
 <UpcommingWebinars/>
+<Instructors/>
    </main>
   )
 }

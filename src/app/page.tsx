@@ -4,6 +4,7 @@ import MovingCard from '@/components/MovingCard'
 import UpcommingWebinars from '@/components/UpcommingWebinars'
 import WhyChooseUS from '@/components/WhyChooseUS'
 import Instructors  from '@/components/Instructors'
+import Footer from '@/components/Footer'
 
 const page = () => {
   return (
@@ -14,6 +15,7 @@ const page = () => {
 <MovingCard/>
 <UpcommingWebinars/>
 <Instructors/>
+<Footer/>
    </main>
   )
 }

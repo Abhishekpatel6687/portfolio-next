@@ -1,46 +1,77 @@
+// import React from "react";
+// import { Meteors } from "@/components/ui/meteors";
+
+// export default function page() {
+//   return (
+//     <div className="relative min-h-screen flex justify-center bg-black text-white">
+//       <Meteors number={60} className="z-10 bg-white" />
+//       <div className="z-20  max-w-xl mt-36 flex flex-wrap flex-col">
+//         <h1 className="text-5xl font-bold mb-4 text-center">Contact Us</h1>
+//         <p className="text-gray-400 text-center">
+//           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+//           non quas tempore tempora consequuntur debitis praesentium
+//           reprehenderit dolor, consequatur asperiores?
+//         </p>
+//         <form className=" mt-10">
+//           <input
+//             type="text"
+//             placeholder="Your email address"
+//             className="w-full h-9 py-6 pl-4 mb-4 bg-gray-900 rounded-md"
+//           />
+//           <textarea
+//             placeholder="Your message"
+//             className="w-full h-44 px-4 py-2 mb-4 bg-gray-900 rounded-md text-white"
+//           />
+//           <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md  ">
+//             Get Started
+//           </button>
+//         </form>
+//       </div>
+//     </div>
+//   );
+// }
 import React from "react";
 import { Meteors } from "@/components/ui/meteors";
 
-export default function page() {
+export default function Page() {
   return (
-    <div className="bg-black mt-36 text-center">
-      <div className=" w-full relative max-w-md">
-        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-        <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
-          <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="h-2 w-2 text-gray-300"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
-              />
-            </svg>
-          </div>
+    <div className="relative min-h-screen flex justify-center items-center 
+    bg-gradient-to-br to-purple-950 from-black text-white">
+      {/* Meteors background effect */}
+      <Meteors number={60} className="z-10" />
 
-          <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-            Meteors because they&apos;re cool
-          </h1>
+      {/* Main content */}
+      <div className="z-20 max-w-lg p-8 mt-12 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg shadow-lg text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6  text-white">Contact Us</h1>
+        <p className="text-lg md:text-xl text-gray-800 mb-8">
+          We're here to help! Drop us a message and we'll get back to you soon.
+        </p>
+        
+        {/* Form */}
+        <form className="space-y-4">
+          {/* Email input */}
+          <input
+            type="email"
+            placeholder="Your email address"
+            className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-900"
+            required
+          />
 
-          <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
-            I don&apos;t know what to write so I&apos;ll just paste something
-            cool here. One more sentence because lorem ipsum is just
-            unacceptable. Won&apos;t ChatGPT the shit out of this.
-          </p>
+          {/* Message textarea */}
+          <textarea
+            placeholder="Your message"
+            className="w-full h-32 px-4 py-2 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-900"
+            required
+          ></textarea>
 
-          <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-            Explore
+          {/* Submit button */}
+          <button
+            type="submit"
+            className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
+          >
+            Send Message
           </button>
-
-          {/* Meaty part - Meteor effect */}
-          <Meteors number={20} />
-        </div>
+        </form>
       </div>
     </div>
   );

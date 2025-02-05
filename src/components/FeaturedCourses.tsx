@@ -24,7 +24,7 @@ const FeaturedCourses = () => {
       <div>
         <div className="text-center">
           <h2 className="text-base text-teal-600 font-semibold tracking-wide">
-            FEATURED COURSES
+            FEATURED COURSESv                                 
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white">
             Learn with the best

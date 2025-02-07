@@ -1,7 +1,7 @@
 
 const footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-black via-purple-950 to-black text-gray-400 py-12">
+    <footer className="bg-gradient-to-b from-black via-green-950 to-black text-gray-400 py-12">
 
     <div className="max-w-full py-4 px-12 gap-8  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
       {/* <div className="w-auto bg-pink-950"> */}

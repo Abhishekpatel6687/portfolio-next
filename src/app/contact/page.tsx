@@ -41,14 +41,15 @@ export default function Page() {
       <Meteors number={60} className="z-10" />
 
       {/* Main content */}
-      <div className="z-20 max-w-lg p-8 mt-12 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg shadow-lg text-center">
+      {/* <div className="z-20 max-w-lg p-8 mt-12 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg shadow-lg text-center"> */}
+      <div className="z-20 max-w-lg  p-8 mt-12    text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6  text-white">Contact Us</h1>
-        <p className="text-lg md:text-xl text-gray-800 mb-8">
+        <p className="text-lg md:text-xl text-gray-400 mb-8">
           We're here to help! Drop us a message and we'll get back to you soon.
         </p>
         
         {/* Form */}
-        <form className="space-y-4">
+        <form className="space-y-4 text-start">
           {/* Email input */}
           <input
             type="email"
@@ -67,7 +68,7 @@ export default function Page() {
           {/* Submit button */}
           <button
             type="submit"
-            className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
+            className=" bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
           >
             Send Message
           </button>

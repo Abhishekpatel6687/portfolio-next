@@ -8,7 +8,8 @@ import Footer from '@/components/Footer'
 
 const page = () => {
   return (
-   <main className='min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]'>
+    // bg-grid-white/[0.02]
+   <main className='min-h-screen bg-backColor antialiased '>
 <HeroSection/>
 <FeaturedCourses/>
 <WhyChooseUS/>

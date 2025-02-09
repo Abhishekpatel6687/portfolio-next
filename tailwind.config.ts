@@ -20,6 +20,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        backColor:"#E9F7E9",
+        c:"#CFF9D3",
+        textColor:"#0E2A25",
+        a:"#3B8C6B",
+        b:"#0E2626",
+        d:"#246F50",
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",

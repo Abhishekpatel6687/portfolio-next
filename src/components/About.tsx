@@ -14,28 +14,29 @@ interface Course {
   isFeatured: boolean;
   // image: "/courses/guitar.jpg"
 }
-const FeaturedCourses = () => {
+const About = () => {
   const featuredCourses = courseData.courses.filter(
     (course: Course) => course.isFeatured
   );
 
   return (
-    <div className="py-12 bg-green-100">
+    <div className="py-12 bg-green-50">
       <div>
         <div className="text-center">
-          <h2 className="text-base text-teal-600 font-semibold tracking-wide">
-            FEATURED COURSESv                                 
+          <h2 className="text-lg text-teal-800 font-semibold tracking-wide">
+          I Know that Good Design
+                                      
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white">
-            Learn with the best
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black">
+          means Good Business  
           </p>
         </div>
       </div>
       <div className="mt-10 ">
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <div className=" grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-5 gap-2 justify-center">
           {featuredCourses.map((course: Course) => (
             <div key={course.id} className="flex justify-center">
-              <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
+              <BackgroundGradient className="flex flex-col rounded-[22px]  dark:bg-white overflow-hidden h-full max-w-60">
                 <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
                   <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">{course.title}</p>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow mb-4 ">{course.description}</p>
@@ -59,4 +60,4 @@ const FeaturedCourses = () => {
   );
 };
 
-export default FeaturedCourses;
+export default About;

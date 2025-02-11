@@ -4,7 +4,7 @@ import { Spotlight } from "./ui/Spotlight";
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen w-full bg-green-100 flex text-black">
+    <div className="min-h-screen w-full bg-green-100 flex ">
     {/* Spotlight component */}
     <Spotlight
       className="-top-40 left-0 md:left-60 md:-top-20"

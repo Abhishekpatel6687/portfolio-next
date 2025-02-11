@@ -1,4 +1,4 @@
-import FeaturedCourses from '@/components/FeaturedCourses'
+import About from '@/components/About'
 import HeroSection from '@/components/HeroSection'
 import MovingCard from '@/components/MovingCard'
 import UpcommingWebinars from '@/components/UpcommingWebinars'
@@ -11,7 +11,7 @@ const page = () => {
     // bg-grid-white/[0.02]
    <main className='min-h-screen bg-backColor antialiased '>
 <HeroSection/>
-<FeaturedCourses/>
+<About/>
 <WhyChooseUS/>
 <MovingCard/>
 <UpcommingWebinars/>

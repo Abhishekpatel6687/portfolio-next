@@ -2,7 +2,7 @@
     "courses": [
         {
             "id": 1,
-            "title": "Guitar Fundamentals",
+            "title": "",
             "slug": "guitar-fundamentals",
             "description": "Learn the basics of playing guitar with our comprehensive beginner courses.",
             "price": 99.99,

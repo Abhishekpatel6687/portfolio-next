@@ -2,91 +2,94 @@
     "courses": [
         {
             "id": 1,
-            "title": "",
+            "title": "HTML",
             "slug": "guitar-fundamentals",
             "description": "Learn the basics of playing guitar with our comprehensive beginner courses.",
             "price": 99.99,
             "instructor": "John Doe",
             "category": "Music",
             "isFeatured": true,
-            "image": "/courses/guitar.jpg"
+            "image": "/logoImage/html.png"
         },
         {
             "id": 2,
-            "title": "Python Programming 101",
+            "title": "CSS",
             "slug": "python-programming-101",
             "description": "Master the foundations of Python programming for beginners.",
             "price": 79.99,
             "instructor": "Alice Smith",
             "category": "Programming",
             "isFeatured": true,
-            "image": "/courses/python.jpg"
+            "image": "/logoImage/cssLogo.png"
         },
         {
             "id": 3,
-            "title": "Digital Marketing Basics",
+            "title": "JAVASCRIPT",
             "slug": "digital-marketing-basics",
             "description": "Explore the essentials of SEO, social media, and content marketing.",
             "price": 59.99,
             "instructor": "Mark Lee",
             "category": "Marketing",
-            "isFeatured": false,
-            "image": "/courses/marketing.jpg"
+            "isFeatured": true,
+            "image": "/logoImage/reactreact.png"
         },
         {
             "id": 4,
-            "title": "Photography for Beginners",
+            "title": "REACT",
             "slug": "photography-for-beginners",
             "description": "Learn how to take stunning photos with any camera.",
             "price": 49.99,
             "instructor": "Jane Cooper",
             "category": "Photography",
-            "isFeatured": false,
-            "image": "/courses/photography.jpg"
+            "isFeatured": true,
+            "image": "/logoImage/jsLogo.png"
         },
         {
             "id": 5,
-            "title": "Personal Finance Mastery",
+            "title": "REDUX",
             "slug": "personal-finance-mastery",
             "description": "Develop strategies to save, invest, and grow your wealth.",
             "price": 89.99,
             "instructor": "Robert King",
             "category": "Finance",
             "isFeatured": true,
-            "image": "/courses/finance.jpg"
+            "image": "/logoImage/tailwind1.png/"
         },
         {
             "id": 6,
-            "title": "Yoga for Stress Relief",
+            "title": "TAILWIND",
             "slug": "yoga-for-stress-relief",
             "description": "Reduce stress and enhance well-being with easy yoga techniques.",
             "price": 29.99,
             "instructor": "Sophia White",
             "category": "Health & Wellness",
-            "isFeatured": false,
-            "image": "/courses/yoga.jpg"
+            "isFeatured": true,
+            "image": "/logoImage/git1.png"
         },
         {
             "id": 7,
-            "title": "Creative Writing Workshop",
+            "title": "GIT & GITHUB",
             "slug": "creative-writing-workshop",
             "description": "Unlock your creativity and craft compelling stories.",
             "price": 69.99,
             "instructor": "Emily Clark",
             "category": "Writing",
             "isFeatured": true,
-            "image": "/courses/writing.jpg"
+            "image": "/logoImage/redux1.png"
+
         },
         {
-            "id": 8,
-            "title": "Data Science Essentials",
-            "slug": "data-science-essentials",
-            "description": "Start your data science journey with hands-on projects and real-world examples.",
-            "price": 129.99,
-            "instructor": "Daniel Adams",
-            "category": "Data Science",
+            "id": 7,
+            "title": "GIT & GITHUB",
+            "slug": "creative-writing-workshop",
+            "description": "Unlock your creativity and craft compelling stories.",
+            "price": 69.99,
+            "instructor": "Emily Clark",
+            "category": "Writing",
             "isFeatured": true,
-            "image": "/courses/datascience.jpg"
+            "image": "/logoImage/typeScript1.png"
+
         }
+        
     ]
 }

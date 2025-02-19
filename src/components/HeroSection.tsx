@@ -11,18 +11,18 @@ const HeroSection = () => {
       fill="white"
     /> */}
 
-    <div className="w-full md:w-[44%] relative bg-red-600">
+    <div className="w-full md:w-[44%] relative">
       {/* Large circular white div with shadow */}
-      <div className="w-28 h-28 md:w-80 md:h-80 bg-gradient-to-r from-green-100 to-white rounded-full mt-[-2rem] ml-[-1rem] md:mt-[-12rem] md:ml-[-2rem] shadow-2xl" />
+      <div className="w-64 h-64 lg:w-80 lg:h-80 bg-gradient-to-r from-green-100 to-white rounded-full mt-[-10rem]  lg:mt-[-12rem] ml-[-2rem] shadow-2xl" />
 
       {/* Small circular white div with shadow */}
-      <div className="w-16 h-16 bg-gradient-to-r from-green-100 to-white rounded-full ml-[20rem] lg:ml-[36rem] shadow-xl mb-20" />
+      <div className="w-16 h-16 bg-gradient-to-r from-green-100 to-white rounded-full md:ml-[20rem] lg:ml-[36rem] shadow-xl md:mb-20" />
 
-      <div className="flex justify-center ">
+      <div className="flex md:justify-center bg-red-400">
         {/* Small circle with a subtle shadow */}
         <div className="w-4 h-4 bg-gradient-to-r from-green-100 to-white rounded-full mr-1 shadow-md" />
-        <h1 className="text-lg md:text-3xl font-bold text-black">Hello,</h1>
-        <h1 className="mt-8 text-2xl md:text-5xl font-bold text-green-950">
+        <h1 className="text-xl lg:text-3xl font-bold text-black">Hello,</h1>
+        <h1 className="mt-8 text-4xl lg:text-5xl font-bold text-green-950">
           I am Abhishek <br />
           <span className="text-2xl">I am Developer</span>
         </h1>
@@ -30,15 +30,15 @@ const HeroSection = () => {
       
 
       {/* Larger circular element with shadow */}
-      <div className="w-20 h-20 bg-gradient-to-r from-red-100 to-white rounded-full ml-16 mt-24 shadow-2xl" />
+      <div className="w-20 h-20 bg-gradient-to-r from-green-100 to-white rounded-full ml-16 mt-24 shadow-2xl" />
 
       {/* Smaller circle with shadow positioned far away */}
       <div className="w-8 h-8 bg-gradient-to-r from-green-100 to-white rounded-full ml-[28rem] mt-20 shadow-lg" />
     </div>
 
     {/* Right Section with content */}
-    <div className="relative ">
-    <div className=" md:w-64 md:h-64 lg:w-80 lg:h-80 bg-gradient-to-r from-green-100 to-white rounded-full md:mt-[-10rem] md:ml-[26rem] lg:mt-[-12rem] lg:ml-[38rem] shadow-2xl absolute" />
+    <div className="relative hidden md:block ">
+    <div className=" md:w-64 md:h-64 lg:w-80 lg:h-80 bg-gradient-to-r from-green-100 to-white rounded-full md:ml-[26rem]  lg:ml-[44rem] shadow-2xl absolute" />
     <div className="md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white rounded-full md:ml-[18rem] lg:ml-[25rem] mt-[5rem] shadow-2xl absolute flex justify-center items-center" >
     <img src="/logoImage/react.png" className="md:w-16 md:h-16 lg:w-20 lg:h-20"/>
     </div>
@@ -51,7 +51,7 @@ const HeroSection = () => {
     <div className="md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white rounded-full md:ml-[18rem] lg:ml-[24rem] shadow-2xl md:mt-[-2.4rem] lg:mt-[-3rem] flex justify-center items-center" >
     <img src="/logoImage/redux.png" className="md:w-16 md:h-16 lg:w-20 lg:h-20 "/>
     </div>
-    <div className="md:w-14 md:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-green-100 to-white rounded-full ml-[40rem] shadow-2xl mt-[-10rem]" />
+    <div className="md:w-14 md:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-green-100 to-white rounded-full ml-[38rem] shadow-2xl mt-[-10rem]" />
     </div> 
     
   </div>

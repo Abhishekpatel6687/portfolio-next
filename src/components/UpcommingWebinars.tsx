@@ -1,78 +1,172 @@
+// "use client";
+// import Link from "next/link";
+// import { HoverEffect } from "./ui/card-hover-effect";
+
+// const data = [
+//     {
+//       id: 1,
+//       title: "Understanding Music Theory",
+//       description: "Dive deep into the fundamentals of music theory and enhance your musical skills.",
+//       slug: "understanding-music-theory",
+//       isFeatured: true,
+//     },
+//     {
+//       id: 2,
+//       title: "The Art of Digital Illustration",
+//       description: "Explore the techniques of digital painting and illustration to create captivating artwork.",
+//       slug: "the-art-of-digital-illustration",
+//       isFeatured: false,
+//     },
+//     {
+//       id: 3,
+//       title: "Mastering Frontend Development",
+//       description: "Learn advanced frontend development techniques with React, Redux, and Tailwind CSS.",
+//       slug: "mastering-frontend-development",
+//       isFeatured: true,
+//     },
+//     {
+//       id: 4,
+//       title: "Exploring the Wonders of Space",
+//       description: "Uncover the mysteries of the universe with insights into space exploration and technology.",
+//       slug: "exploring-the-wonders-of-space",
+//       isFeatured: false,
+//     },
+//     {
+//       id: 5,
+//       title: "Effective Time Management Tips",
+//       description: "Enhance your productivity with practical time management techniques for daily life.",
+//       slug: "effective-time-management-tips",
+//       isFeatured: true,
+//     },
+//     {
+//       id: 6,
+//       title: "Healthy Living Through Nutrition",
+//       description: "Discover the secrets of balanced nutrition to maintain a healthy and vibrant lifestyle.",
+//       slug: "healthy-living-through-nutrition",
+//       isFeatured: false,
+//     },
+//   ];
+
+// const UpcommingWebinars = () => {
+//   return (
+//     <div className=" bg-gray-900 p-12">
+//       <div className="  mx=auto px-4 sm:px-6">
+//         <div className=" text-center text-teal-600 font-semibold tracking-wide uppercase">
+//           <h2 className="text-base ">My Creative Portfolio Section</h2>
+//           <p className="mt-2 leading-8 text-3xl font-extrabold tracking-tight text-white">Enhance Your Musical Journey</p>
+//         </div>
+//         <div className=" mt-10">
+//         <HoverEffect items={data.map(data => (
+//             {
+//                 title:data.title,
+//                 description:data.description,
+//                 link:'/'
+//             }
+//         ))} />
+//       </div>
+//       <div className="mt-10 text-center">
+// <Link href={"/"} className="rounded border border-neutral-600 px-4 py-2 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200">
+// View all webinars
+// </Link>
+//       </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default UpcommingWebinars;
+
 "use client";
-import Link from "next/link";
-import { HoverEffect } from "./ui/card-hover-effect";
+import React from "react";
+import { PinContainer } from "./ui/3d-pin";
 
-const data = [
-    {
-      id: 1,
-      title: "Understanding Music Theory",
-      description: "Dive deep into the fundamentals of music theory and enhance your musical skills.",
-      slug: "understanding-music-theory",
-      isFeatured: true,
-    },
-    {
-      id: 2,
-      title: "The Art of Digital Illustration",
-      description: "Explore the techniques of digital painting and illustration to create captivating artwork.",
-      slug: "the-art-of-digital-illustration",
-      isFeatured: false,
-    },
-    {
-      id: 3,
-      title: "Mastering Frontend Development",
-      description: "Learn advanced frontend development techniques with React, Redux, and Tailwind CSS.",
-      slug: "mastering-frontend-development",
-      isFeatured: true,
-    },
-    {
-      id: 4,
-      title: "Exploring the Wonders of Space",
-      description: "Uncover the mysteries of the universe with insights into space exploration and technology.",
-      slug: "exploring-the-wonders-of-space",
-      isFeatured: false,
-    },
-    {
-      id: 5,
-      title: "Effective Time Management Tips",
-      description: "Enhance your productivity with practical time management techniques for daily life.",
-      slug: "effective-time-management-tips",
-      isFeatured: true,
-    },
-    {
-      id: 6,
-      title: "Healthy Living Through Nutrition",
-      description: "Discover the secrets of balanced nutrition to maintain a healthy and vibrant lifestyle.",
-      slug: "healthy-living-through-nutrition",
-      isFeatured: false,
-    },
-  ];
-  
+const projects = [
+  {
+    id: 1,
+    projectName: "E-Commerce",
+    link: "https://spiffy-tarsier-01d793.netlify.app/",
+    description: "This is the best e-commerce site. Please check it out.",
+    image: "/projects/e-com.png",
+  },
+  {
+    id: 2,
+    projectName: "Netflix Clone",
+    link: "https://aaddyy.netlify.app/",
+    description:
+      "A fully responsive Netflix Clone with movie streaming features.",
+    image: "/projects/netflix.png",
+  },
+  {
+    id: 3,
+    projectName: "Portfolio Website",
+    link: "https://collegemanagement6687.netlify.app/",
+    description:
+      "A personal portfolio website to showcase projects and skills.",
+    image: "/projects/college.png",
 
-const UpcommingWebinars = () => {
+  },
+  {
+    id: 4,
+    projectName: "Chat Application",
+    link: "https://todolist6687.netlify.app/",
+    description: "A real-time chat application built with React and Firebase.",
+    image: "/projects/todo-list.png",
+
+  },
+  {
+    id: 5,
+    projectName: "Task Manager",
+    link: "https://dainty-concha-e96c09.netlify.app/",
+    description: "A productivity app to manage daily tasks efficiently.",
+    image: "/projects/pricing.png",
+
+  },
+  {
+    id: 6,
+    projectName: "weather app",
+    link: "https://todo-task010.netlify.app/",
+    description: "A weather forecasting app using OpenWeather API.",
+    image: "/projects/todo.png",
+
+  },
+  {
+    id: 7,
+    projectName: "weather app",
+    link: "https://enchanting-gumption-a6ac06.netlify.app/",
+    description: "A weather forecasting app using OpenWeather API.",
+    image: "/projects/hospital.png",
+
+  },
+  {
+    id: 8,
+    projectName: "weather app",
+    link: "https://leafy-zabaione-426ebd.netlify.app/",
+    description: "A weather forecasting app using OpenWeather API.",
+    image: "/projects/portfolio.png",
+
+  },
+];
+
+export default function UpcommingWebinars() {
   return (
-    <div className=" bg-gray-900 p-12">
-      <div className="  mx=auto px-4 sm:px-6">
-        <div className=" text-center text-teal-600 font-semibold tracking-wide uppercase">
-          <h2 className="text-base ">FEATURED WEBINARS</h2>
-          <p className="mt-2 leading-8 text-3xl font-extrabold tracking-tight text-white">Enhance Your Musical Journey</p>
-        </div>
-        <div className=" mt-10">
-        <HoverEffect items={data.map(data => (
-            {
-                title:data.title,
-                description:data.description,
-                link:'/'
-            }
-        ))} />
-      </div>
-      <div className="mt-10 text-center">
-<Link href={"/"} className="rounded border border-neutral-600 px-4 py-2 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200">
-View all webinars
-</Link>
-      </div>
-      </div>
+    <div className="min-h-screen w-full flex flex-wrap justify-center gap-8 p-8 bg-green-100">
+      {projects.map((item) => {
+        return (
+          <PinContainer title={item.link} href={item.link}>
+            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                {item.projectName}
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">{item.description}</span>
+              </div>
+              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
+                <img src={item.image} alt="netflix" />
+              </div>
+            </div>
+          </PinContainer>
+        );
+      })}
     </div>
   );
-};
-
-export default UpcommingWebinars;
+}

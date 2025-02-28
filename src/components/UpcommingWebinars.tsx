@@ -77,7 +77,7 @@
 // export default UpcommingWebinars;
 
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { PinContainer } from "./ui/3d-pin";
 
 const projects = [
@@ -148,8 +148,16 @@ const projects = [
 ];
 
 export default function UpcommingWebinars() {
+  const projectSkills = ['HTML & CSS', 'React Js', 'Web App', 'All']
   return (
     <div className="min-h-screen w-full flex flex-wrap justify-center gap-8 p-8 bg-green-100">
+    {projectSkills.map((item) => {
+      return(
+        <>
+        <button className="text-black">{item}</button>
+        </>
+      )
+    })}
       {projects.map((item) => {
         return (
           <PinContainer title={item.link} href={item.link}>

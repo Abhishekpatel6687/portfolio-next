@@ -153,21 +153,21 @@ export default function UpcommingWebinars() {
   const projectSkills = ["HTML & CSS", "React Js", "Web App", "All"];
   return (
     <div className="min-h-screen w-full flex flex-wrap justify-center gap-8 pt-12 bg-green-100">
-      <div className="flex w-1/3 items-center justify-around">
-        {projectSkills.map((item) => {
-          return (
-            <div>
-              <button className="bg-green-800 rounded-lg py-1 px-5 text-white  hover:text-black hover:bg-green-500 ">{item}</button>
-            </div>
-          );
-        })}
-      </div>
-      <div className="min-h-screen w-full flex flex-wrap justify-evenly   mb-6 p-8 bg-green-100">
+   <div className="w-full sm:max-w-[34rem] md:max-w-[40rem] grid grid-cols-2  sm:grid-cols-4 gap-4 sm:gap-0 lg:gap-4 p-4">
+  {projectSkills.map((item, index) => (
+    <div key={index} className="flex justify-center">
+      <button className="bg-green-800 text-sm md:text-md rounded-lg py-1 px-5 text-white hover:text-black hover:bg-green-500 transition duration-300">
+        {item}
+      </button>
+    </div>
+  ))}
+</div>
+      <div className="min-h-screen w-full flex flex-wrap justify-evenly    mb-6 p-8 md:p-0 lg:p-8 bg-green-100">
         {projects.map((item) => {
           return (
             <div className="mb-20">
             <PinContainer title1="github Link" href1={item.github} title="project link" href={item.link}>
-              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2  w-[16rem] h-[16rem] sm:w-[20rem] sm:h-[20rem] ">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                   {item.projectName}
                 </h3>

@@ -85,6 +85,7 @@ const projects = [
     id: 1,
     projectName: "E-Commerce",
     link: "https://spiffy-tarsier-01d793.netlify.app/",
+    github: "https://github.com/Abhishekpatel6687/electro-com",
     description: "This is the best e-commerce site. Please check it out.",
     image: "/projects/e-com.png",
   },
@@ -92,6 +93,7 @@ const projects = [
     id: 2,
     projectName: "Netflix Clone",
     link: "https://aaddyy.netlify.app/",
+    github: "https://github.com/Abhishekpatel6687/Netflix-Clone",
     description:
       "A fully responsive Netflix Clone with movie streaming features.",
     image: "/projects/netflix.png",
@@ -100,18 +102,18 @@ const projects = [
     id: 3,
     projectName: "Portfolio Website",
     link: "https://collegemanagement6687.netlify.app/",
+    github: "https://github.com/Abhishekpatel6687/CollegeManagement",
     description:
       "A personal portfolio website to showcase projects and skills.",
     image: "/projects/college.png",
-
   },
   {
     id: 4,
     projectName: "Chat Application",
     link: "https://todolist6687.netlify.app/",
+    github: "https://github.com/Abhishekpatel6687/To-Do-List",
     description: "A real-time chat application built with React and Firebase.",
     image: "/projects/todo-list.png",
-
   },
   {
     id: 5,
@@ -148,33 +150,39 @@ const projects = [
 ];
 
 export default function UpcommingWebinars() {
-  const projectSkills = ['HTML & CSS', 'React Js', 'Web App', 'All']
+  const projectSkills = ["HTML & CSS", "React Js", "Web App", "All"];
   return (
-    <div className="min-h-screen w-full flex flex-wrap justify-center gap-8 p-8 bg-green-100">
-    {projectSkills.map((item) => {
-      return(
-        <>
-        <button className="text-black">{item}</button>
-        </>
-      )
-    })}
-      {projects.map((item) => {
-        return (
-          <PinContainer title={item.link} href={item.link}>
-            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-                {item.projectName}
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">{item.description}</span>
-              </div>
-              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
-                <img src={item.image} alt="netflix" />
-              </div>
+    <div className="min-h-screen w-full flex flex-wrap justify-center gap-8 pt-12 bg-green-100">
+      <div className="flex w-1/3 items-center justify-around">
+        {projectSkills.map((item) => {
+          return (
+            <div>
+              <button className="bg-green-800 rounded-lg py-1 px-5 text-white  hover:text-black hover:bg-green-500 ">{item}</button>
             </div>
-          </PinContainer>
-        );
-      })}
+          );
+        })}
+      </div>
+      <div className="min-h-screen w-full flex flex-wrap justify-evenly   mb-6 p-8 bg-green-100">
+        {projects.map((item) => {
+          return (
+            <div className="mb-20">
+            <PinContainer title1="github Link" href1={item.github} title="project link" href={item.link}>
+              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+                <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                  {item.projectName}
+                </h3>
+                <div className="text-base !m-0 !p-0 font-normal">
+                  <span className="text-slate-500 ">{item.description}</span>
+                </div>
+                <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
+                  <img src={item.image} alt="netflix" />
+                </div>
+              </div>
+            </PinContainer>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

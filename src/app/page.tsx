@@ -5,6 +5,7 @@ import UpcommingWebinars from '@/components/UpcommingWebinars'
 import WhyChooseUS from '@/components/WhyChooseUS'
 import Instructors  from '@/components/Instructors'
 import Footer from '@/components/Footer'
+import SkillsEducation from '@/components/SkillsEducation'
 
 const page = () => {
   return (
@@ -12,9 +13,10 @@ const page = () => {
    <main className='min-h-screen bg-backColor antialiased '>
 <HeroSection/>
 <About/>
+<UpcommingWebinars/>
+<SkillsEducation/>
 <WhyChooseUS/>
 <MovingCard/>
-<UpcommingWebinars/>
 <Instructors/>
 <Footer/>
    </main>

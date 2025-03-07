@@ -18,36 +18,45 @@ const skills = [
 const education = [
   {
     id: 1,
-    date: "2022 - till",
-    role: "SDE (Full time + Internship) Stanverse Technology Pvt. Ltd.",
+    date: "2023 - Present",
+    role: "Full-time Internship →  Job",
+    description: "Ibest Multiple Works Pvt. Ltd."
   },
   {
     id: 2,
-    date: "2021 - 2022",
-    role: "Software Developer Intern at ABC Tech Solutions",
+    date: "2023 - 2023",
+    role: "Summer Training",
+    description: "Digicoders Technology Pvt. Ltd. (Lucknow)"
   },
   {
     id: 3,
-    date: "2020 - 2021",
-    role: "Frontend Developer Intern at XYZ Innovations",
+    date: "2019 - 2023",
+    role: "B.Tech in Computer Science and Technology",
+    description: "Goel Institute of Technology and Management"
   },
-  { id: 4, date: "2019 - 2020", role: "Web Development Intern at WebX Studio" },
-  { id: 5, date: "2018 - 2019", role: "Machine Learning Trainee at AI Labs" },
   {
-    id: 6,
-    date: "2017 - 2018",
-    role: "Full Stack Developer Intern at CodeCrafters",
+    id: 4,
+    date: "2018 - 2019",
+    role: "12th Standard",
+    description: "Lucknow Model Public College"
   },
+  {
+    id: 5,
+    date: "2016 - 2017",
+    role: "10th Standard",
+    description: "Lucknow Model Public College"
+  }
 ];
+
 
 const SkillsEducation = () => {
   return (
-    <div className="min-h-screen w-full py-4 bg-gray-200 text-black">
+    <div className="min-h-min w-full py-12 bg-green-200 text-black">
       <div className="flex justify-center items-center">
         <h1 className="text-4xl">Skills & Education</h1>
       </div>
       <div className="flex px-8 mt-8">
-        <div className="w-1/2 flex flex-wrap px-12 gap-8 bg-red-200 ">
+        <div className="w-1/2 flex flex-wrap px-12 py-6 gap-8">
           {skills.map((item) => {
             return (
               <div className=" w-32 h-32 flex items-center justify-center flex-col ">
@@ -55,30 +64,37 @@ const SkillsEducation = () => {
                   <img
                     src={item.image}
                     className=" absolute"
-                    height={60}
-                    width={60}
+                    height={50}
+                    width={50}
                     alt="html"
                   />
                 </div>
                 <div className="mt-2">
-                  <p>{item.name}</p>
+                  <p className="text-sm font-medium">{item.name}</p>
                 </div>
               </div>
             );
           })}
         </div>
-        <div className="w-1/2 bg-green-500">
-          <div className="flex">
-            {education.map((item) => {
-              return (
-                <div className="flex">
-                  <h1>{item.date}</h1>
-                  <p>
-                    {item.role}
-                  </p>
+        <div className="w-1/2 flex py-6">
+          <div className="w-[0.1rem] h-full ml-2 bg-black relative rounded-full">
+            {/* <div className="w-4 h-4 mt-4 bg-white rounded-full absolute left-1/2 -translate-x-1/2 top-0" /> */}
+          </div>
+          <div className="flex flex-col w-full h-full gap-6">
+            {education.map((i) => (
+              <div key={i.id} className="flex items-start gap-4">
+                <div className="w-1 h-full relative rounded-full">
+                  <div className="w-4 h-4 mt-4 mr-20 bg-green-800 rounded-full absolute -translate-x-1/2 top-0" />
                 </div>
-              );
-            })}
+                <div className="p-3 flex w-full justify-between mr-6">
+                  <div className="">
+                  <p className="font-bold">{i.role}</p>
+                  <p className="text-sm mt-1">{i.description}</p>
+                  </div>
+                  <p className="text-sm text-gray-800">{i.date}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -18,31 +18,31 @@ const skills = [
 const education = [
   {
     id: 1,
-    date: "2023 - Present",
+    date: "Dec 2023 - Present",
     role: "Full-time Internship →  Job",
     description: "Ibest Multiple Works Pvt. Ltd."
   },
   {
     id: 2,
-    date: "2023 - 2023",
+    date: "Feb 2023 - Nov 2023",
     role: "Summer Training",
     description: "Digicoders Technology Pvt. Ltd. (Lucknow)"
   },
   {
     id: 3,
-    date: "2019 - 2023",
+    date: "July 2019 - July 2023",
     role: "B.Tech in Computer Science and Technology",
     description: "Goel Institute of Technology and Management"
   },
   {
     id: 4,
-    date: "2018 - 2019",
+    date: "July 2018 - June 2019",
     role: "12th Standard",
     description: "Lucknow Model Public College"
   },
   {
     id: 5,
-    date: "2016 - 2017",
+    date: "July 2016 - June 2017",
     role: "10th Standard",
     description: "Lucknow Model Public College"
   }

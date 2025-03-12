@@ -20,34 +20,33 @@ const education = [
     id: 1,
     date: "Dec 2023 - Present",
     role: "Full-time Internship →  Job",
-    description: "Ibest Multiple Works Pvt. Ltd."
+    description: "Ibest Multiple Works Pvt. Ltd.",
   },
   {
     id: 2,
     date: "Feb 2023 - Nov 2023",
     role: "Summer Training",
-    description: "Digicoders Technology Pvt. Ltd. (Lucknow)"
+    description: "Digicoders Technology Pvt. Ltd. (Lucknow)",
   },
   {
     id: 3,
     date: "July 2019 - July 2023",
     role: "B.Tech in Computer Science and Technology",
-    description: "Goel Institute of Technology and Management"
+    description: "Goel Institute of Technology and Management",
   },
   {
     id: 4,
     date: "July 2018 - June 2019",
     role: "12th Standard",
-    description: "Lucknow Model Public College"
+    description: "Lucknow Model Public College",
   },
   {
     id: 5,
     date: "July 2016 - June 2017",
     role: "10th Standard",
-    description: "Lucknow Model Public College"
-  }
+    description: "Lucknow Model Public College",
+  },
 ];
-
 
 const SkillsEducation = () => {
   return (
@@ -55,8 +54,8 @@ const SkillsEducation = () => {
       <div className="flex justify-center items-center">
         <h1 className="text-4xl">Skills & Education</h1>
       </div>
-      <div className="flex px-8 mt-8">
-        <div className="w-1/2 flex flex-wrap px-12 py-6 gap-8">
+      <div className="lg:flex px-8 mt-8">
+        <div className="w-full lg:w-1/2 flex flex-wrap xs:px-1 sm:px-4 xl:px-12 py-6 gap-8">
           {skills.map((item) => {
             return (
               <div className=" w-32 h-32 flex items-center justify-center flex-col ">
@@ -76,8 +75,8 @@ const SkillsEducation = () => {
             );
           })}
         </div>
-        <div className="w-1/2 flex py-6">
-          <div className="w-[0.1rem] h-full ml-2 bg-black relative rounded-full">
+        <div className="w-full lg:w-1/2 flex py-6">
+          <div className="w-[0.1rem] lg:h-full ml-2 bg-black relative rounded-full">
             {/* <div className="w-4 h-4 mt-4 bg-white rounded-full absolute left-1/2 -translate-x-1/2 top-0" /> */}
           </div>
           <div className="flex flex-col w-full h-full gap-6">
@@ -87,11 +86,16 @@ const SkillsEducation = () => {
                   <div className="w-4 h-4 mt-4 mr-20 bg-green-800 rounded-full absolute -translate-x-1/2 top-0" />
                 </div>
                 <div className="p-3 flex w-full justify-between mr-6">
-                  <div className="">
-                  <p className="font-bold">{i.role}</p>
-                  <p className="text-sm mt-1">{i.description}</p>
+                  <div>
+                    <p className="font-bold">{i.role}</p>
+                    <p className="xs:block sm:hidden text-sm text-gray-800">
+                      {i.date}
+                    </p>
+                    <p className="text-sm mt-1">{i.description}</p>
                   </div>
-                  <p className="text-sm text-gray-800">{i.date}</p>
+                  <p className="xs:hidden sm:block  text-sm text-gray-800">
+                    {i.date}
+                  </p>
                 </div>
               </div>
             ))}

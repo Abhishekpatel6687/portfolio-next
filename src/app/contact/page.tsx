@@ -48,7 +48,16 @@ export default function Page() {
           We're here to help! Drop us a message and we'll get back to you soon.
         </p>
         
-        {/* Form */}
+     <div className=" text-black flex justify-between mb-4">
+      <a  href="mailto:abhishekPatel6687@mail.com" className="flex gap-4 px-4 py-2 rounded-lg bg-pink-50 items-center justify-center">
+        <img src="/Image/gmail.png" width={40} alt="gmailImage" />
+        <p>abhishekPatel6687@mail.com</p>
+      </a>
+      <a href="tel:+917071326687" className="flex pr-20 pl-2 rounded-lg bg-green-100 items-center justify-center">
+      <img src="/Image/mobile.png" width={30} alt="mobileImage" />
+      <p>+91 7071326687</p>
+      </a>
+      </div>
         <form className="space-y-4 text-start">
         <input
             type="text"

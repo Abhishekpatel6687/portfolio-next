@@ -42,25 +42,28 @@ export default function Page() {
 
       {/* Main content */}
       {/* <div className="z-20 max-w-lg p-8 mt-12 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg shadow-lg text-center"> */}
-      <div className="z-20 max-w-lg  p-8 mt-12    text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6  text-white">Contact Us</h1>
+      <div className="z-20 p-8 mt-6 text-center">
+        <h1 className="text-4xl font-bold mb-6  text-white">Take a coffee & chat with me</h1>
         <p className="text-lg md:text-xl text-gray-400 mb-8">
           We're here to help! Drop us a message and we'll get back to you soon.
         </p>
         
         {/* Form */}
         <form className="space-y-4 text-start">
-          {/* Email input */}
-          <input
-            type="email"
-            placeholder="Your email address"
+        <input
+            type="text"
+            placeholder="Your Name"
             className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
             required
           />
-
-          {/* Message textarea */}
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
+            required
+          />
           <textarea
-            placeholder="Your message"
+            placeholder="Your Message"
             className="w-full h-32 px-4 py-2 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
             required
           ></textarea>

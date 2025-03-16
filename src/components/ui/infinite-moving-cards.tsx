@@ -102,7 +102,7 @@ export const InfiniteMovingCards = ({
               <p className="flex justify-center text-lg items-center">{item.name}</p>
               {/* <p className="flex justify-center font-normal text-xs text-gray-200 items-center">{item.title}</p> */}
               <span className=" relative z-20">
-              <img src={item.image} className="rounded-2xl h-60" />
+              <img src={item.image} className="rounded-lg h-60" />
               </span>
             </blockquote>
           </li>

@@ -6,6 +6,8 @@ import WhyChooseUS from '@/components/WhyChooseUS'
 import Instructors  from '@/components/Instructors'
 import Footer from '@/components/Footer'
 import SkillsEducation from '@/components/SkillsEducation'
+import Contact from '@/components/Contact'
+
 
 const page = () => {
   return (
@@ -15,8 +17,9 @@ const page = () => {
 <About/>
 <UpcommingWebinars/>
 <SkillsEducation/>
-<WhyChooseUS/>
-<MovingCard/>
+{/* <WhyChooseUS/>
+<MovingCard/> */}
+<Contact />
 <Instructors/>
 <Footer/>
    </main>

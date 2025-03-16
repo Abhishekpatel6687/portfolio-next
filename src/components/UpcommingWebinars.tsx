@@ -152,17 +152,17 @@ const projects = [
 export default function UpcommingWebinars() {
   const projectSkills = ["HTML & CSS", "React Js", "Web App", "All"];
   return (
-    <div className="min-h-screen w-full flex flex-wrap justify-center gap-8 pt-12 bg-green-100">
+    <div className="min-h-screen w-full flex flex-wrap justify-center gap-4 pt-12 bg-green-100">
    <div className="w-full sm:max-w-[34rem] md:max-w-[40rem] grid grid-cols-2  sm:grid-cols-4 gap-4 sm:gap-0 lg:gap-4 p-4">
   {projectSkills.map((item, index) => (
     <div key={index} className="flex justify-center">
-      <button className="bg-green-800 text-sm md:text-md rounded-lg py-1 px-5 text-white hover:text-black hover:bg-green-500 transition duration-300">
+      <button className="bg-green-800 text-sm md:text-md rounded-lg py-2 px-5 text-white hover:text-black hover:bg-green-500 transition duration-300">
         {item}
       </button>
     </div>
   ))}
 </div>
-      <div className="min-h-screen w-full flex flex-wrap justify-evenly    mb-6 p-8 md:p-0 lg:p-8 bg-green-100">
+      <div className="min-h-screen w-full flex flex-wrap justify-evenly    mb-6 p-8 md:p-0 lg:p-8 ">
         {projects.map((item) => {
           return (
             <div className="mb-20">

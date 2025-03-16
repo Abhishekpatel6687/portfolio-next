@@ -17,8 +17,8 @@ const page = () => {
 <About/>
 <UpcommingWebinars/>
 <SkillsEducation/>
-{/* <WhyChooseUS/>
-<MovingCard/> */}
+{/* <WhyChooseUS/> */}
+<MovingCard/>
 <Contact />
 <Instructors/>
 <Footer/>

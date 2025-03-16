@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
-  direction = "left",
+  direction = "right",
   speed = "fast",
   pauseOnHover = true,
   className,
@@ -15,7 +15,7 @@ export const InfiniteMovingCards = ({
     title: string;
     image: string;
   }[];
-  direction?: "left" | "right";
+  direction?: "right" | "left";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
@@ -45,7 +45,7 @@ export const InfiniteMovingCards = ({
   }
   const getDirection = () => {
     if (containerRef.current) {
-      if (direction === "left") {
+      if (direction === "right") {
         containerRef.current.style.setProperty(
           "--animation-direction",
           "forwards"
@@ -73,7 +73,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20  max-w-full overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -87,10 +87,10 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full flex items-center justify-center relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 p-4 md:w-[450px]"
+            className="w-[350px] max-w-7xl flex items-center justify-center relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 p-4 md:w-[450px]"
             style={{
-              background:"#052C15"
-                // "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+              background:
+                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
             }}
             key={idx}
           >
@@ -99,8 +99,9 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div> */}
-              <p>{item.name}</p>
-              <span className=" relative z-20 text-sm text-gray-100 font-normal">
+              <p className="flex justify-center text-lg items-center">{item.name}</p>
+              {/* <p className="flex justify-center font-normal text-xs text-gray-200 items-center">{item.title}</p> */}
+              <span className=" relative z-20">
               <img src={item.image} className="rounded-2xl h-60" />
               </span>
             </blockquote>

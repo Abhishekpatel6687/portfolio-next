@@ -5,40 +5,63 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 const testimonials = [
   {
-   name: "e-commarce",
-    title: "A Tale of Two Cities",
-    image: "/projects/e-com.png",
-  },
-  {
-   name: "e-commarce",
+    name: "Netflix",
     title: "Hamlet",
-    image: "/projects/e-com.png",
+    image: "/projects/netflix.png",
   },
   {
-  name: "e-commarce",
-    title: "A Dream Within a Dream",
-    image: "/projects/e-com.png",
+    name: "e-commarce",
+    title: "Moby-Dick",
+    image: "/netflixProject/login.png",
   },
   {
     name: "e-commarce",
     title: "Pride and Prejudice",
+    image: "/netflixProject/show.png",
+  },
+  //==================
+  {
+    name: "college",
+    title: "A Dream Within a Dream",
+    image: "/projects/college.png",
+  },
+  {
+    name: "college",
+    title: "A Dream Within a Dream",
+    image: "/collegeProject/founder.png",
+  },
+  //=======
+  {
+    name: "e-commarce",
+    title: "Hamlet",
     image: "/projects/e-com.png",
   },
   {
-   name: "e-commarce",
+    name: "e-commarce",
     title: "Moby-Dick",
-    image: "/projects/e-com.png",
+    image: "/e-comProject/products.png",
   },
+  {
+    name: "e-commarce",
+    title: "Pride and Prejudice",
+    image: "/e-comProject/productDetails.png",
+  },
+  {
+    name: "e-commarce",
+    title: "A Dream Within a Dream",
+    image: "/e-comProject/addToCart.png",
+  },
+  //=========================
 ];
 
 const MovingCard = () => {
   return (
     <div className="h-[32rem] w-full dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
       <h2 className=" text-3xl font-bold text-center mb-8 z-10">
-       Here my creative web applications and Projects.
+        Here my creative web applications and Projects.
       </h2>
       <div className="flex justify-center w-full overflow-hidden px-1 sm:px-4">
-        <div className="w-full max-w-6xl ">
+        <div className="w-full max-w-7xl ">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"

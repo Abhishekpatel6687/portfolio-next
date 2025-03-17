@@ -41,7 +41,7 @@ const Multimedia = () => {
     // },
   ];
   return (
-    <div className="flex gap-1 ml-2 flex-col text-black">
+    <div className="flex gap-1 mx-2 flex-col text-black">
     {people.map((item, i) => (
       <div
         key={i}

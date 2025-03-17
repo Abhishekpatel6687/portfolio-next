@@ -79,6 +79,7 @@
 "use client";
 import React, { useState } from "react";
 import { PinContainer } from "./ui/3d-pin";
+import Multimedia from "./Multimedia";
 
 const projects = [
   {
@@ -152,7 +153,11 @@ const projects = [
 export default function UpcommingWebinars() {
   const projectSkills = ["HTML & CSS", "React Js", "Web App", "All"];
   return (
-    <div className="min-h-screen w-full flex flex-wrap justify-center gap-4 pt-12 bg-green-100">
+    <div className="min-h-screen w-full  gap-4 relative bg-green-100">
+           <div className=" flex justify-center h-full items-end  absolute">
+      <Multimedia />
+        </div>
+      <div className="flex flex-wrap justify-center pt-12">
    <div className="w-full sm:max-w-[34rem] md:max-w-[40rem] grid grid-cols-2  sm:grid-cols-4 gap-4 sm:gap-0 lg:gap-4 p-4">
   {projectSkills.map((item, index) => (
     <div key={index} className="flex justify-center">
@@ -183,6 +188,8 @@ export default function UpcommingWebinars() {
           );
         })}
       </div>
+      </div>
+     
     </div>
   );
 }

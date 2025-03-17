@@ -1,5 +1,6 @@
 import { image } from "framer-motion/client";
 import React from "react";
+import Multimedia from "./Multimedia";
 
 const skills = [
   { id: 1, name: "HTML", image: "/logoImage/html.png" },
@@ -50,11 +51,14 @@ const education = [
 
 const SkillsEducation = () => {
   return (
-    <div className="min-h-min w-full py-12 bg-green-200 text-black">
-      <div className="flex justify-center items-center">
+    <div className="min-h-min w-full bg-green-200 relative text-black">
+        <div className=" flex justify-center h-full items-end max-h-screen  absolute">
+      <Multimedia />
+        </div>
+      <div className="flex justify-center items-center pt-12">
         <h1 className="text-4xl">Skills & Education</h1>
       </div>
-      <div className="lg:flex px-8 mt-8">
+      <div className="lg:flex px-8 pb-12 mt-8">
         <div className="w-full lg:w-1/2 flex flex-wrap xs:px-1 sm:px-4 xl:px-12 py-6 gap-8">
           {skills.map((item) => {
             return (

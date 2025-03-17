@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import Multimedia from "./Multimedia";
 
 const testimonials = [
   {
@@ -56,20 +57,33 @@ const testimonials = [
 
 const MovingCard = () => {
   return (
-    <div className="h-[32rem] w-full dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
-      <h2 className=" text-3xl font-bold text-center mb-8 z-10">
-        Here my creative web applications and Projects.
-      </h2>
-      <div className="flex justify-center w-full overflow-hidden px-1 sm:px-4">
-        <div className="w-full max-w-7xl ">
-          <InfiniteMovingCards
-            items={testimonials}
-            direction="right"
-            speed="slow"
-          />
-        </div>
+<div className="relative h-[32rem] w-full dark:bg-black dark:bg-grid-white/[0.2]">
+  {/* Multimedia Section */}
+  <div className="absolute inset-x-0 bottom-0 flex justify-start items-end z-50">
+    <Multimedia />
+  </div>
+
+  {/* Content Section */}
+  <div className="relative flex flex-col items-center justify-center overflow-hidden">
+    {/* Title */}
+    <h2 className="text-3xl font-bold text-center mb-8 z-10 text-gray-900 dark:text-white">
+      Here are my creative web applications and projects.
+    </h2>
+
+    {/* Infinite Scroll Cards */}
+    <div className="flex justify-center w-full overflow-hidden px-1 sm:px-4">
+      <div className="w-full max-w-7xl">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+          // className="hover:scale-105 transition-transform duration-500 ease-in-out"
+        />
       </div>
     </div>
+  </div>
+</div>
+
   );
 };
 

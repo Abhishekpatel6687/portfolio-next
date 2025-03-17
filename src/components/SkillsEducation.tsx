@@ -52,7 +52,7 @@ const education = [
 const SkillsEducation = () => {
   return (
     <div className="min-h-min w-full bg-green-200 relative text-black">
-        <div className=" flex justify-center h-full items-end max-h-screen  absolute">
+        <div className=" flex justify-end h-full items-end  absolute">
       <Multimedia />
         </div>
       <div className="flex justify-center items-center pt-12">

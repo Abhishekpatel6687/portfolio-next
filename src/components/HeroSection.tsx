@@ -6,10 +6,10 @@ import Multimedia from "./Multimedia";
 const HeroSection = () => {
   return (
     // <div className="min-h-screen w-full bg-green-100 flex flex-col overflow-hidden md:flex-row">
-    <div className=" min-h-[38rem] md:min-h-screen w-full bg-green-100 flex flex-col md:flex-row  overflow-hidden">
+    <div className=" min-h-[38rem] relative md:min-h-screen w-full bg-green-100 flex flex-col md:flex-row  overflow-hidden">
       {/* Spotlight component */}
       {/* <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" /> */}
-      <div className=" flex justify-center h-full items-end max-h-screen  absolute">
+      <div className=" flex justify-end h-full items-end  absolute">
       <Multimedia />
         </div>
       {/* Left Section */}

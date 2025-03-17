@@ -37,11 +37,11 @@ import Multimedia from "./Multimedia";
 export default function Page() {
   return (
     <div
-      className="relative min-h-screen  bg-gradient-to-br to-green-950 from-black text-white"
+      className="relative min-h-screen bg-gradient-to-br to-green-950 from-black text-white"
     //     className="relative min-h-screen flex justify-center items-center 
     // bg-green-100 text-white"
     >
-      <div className=" flex justify-center h-full items-end max-h-screen absolute">
+      <div className=" flex justify-center h-full items-end absolute">
         <Multimedia />
       </div>
       <div className="flex justify-center items-center 

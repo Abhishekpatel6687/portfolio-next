@@ -26,10 +26,10 @@ const About = () => {
      {/* <div className="absolute flex justify-start h-full items-end">
     <Multimedia />
   </div> */}
-  <div className=" flex inset-x-0 bottom-0 justify-start z-50 h-full  items-end absolute">
+  <div className=" flex justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>
-        <div className=" text-black inset-x-0 bottom-0 absolute flex justify-end h-full items-center">
+        <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
       <PageLink id ={2} />
         </div>
       <div className="pt-12">

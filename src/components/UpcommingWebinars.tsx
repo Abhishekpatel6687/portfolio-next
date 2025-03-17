@@ -155,10 +155,10 @@ export default function UpcommingWebinars() {
   const projectSkills = ["HTML & CSS", "React Js", "Web App", "All"];
   return (
     <div className="min-h-screen w-full  gap-4 relative bg-green-100">
-           <div className=" flex justify-center h-full items-end  absolute">
+      <div className=" flex justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>
-        <div className=" text-black inset-x-0 bottom-0 absolute flex justify-end h-full items-center">
+        <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
       <PageLink id ={3} />
         </div>
       <div className="flex flex-wrap justify-center pt-12">

@@ -42,11 +42,11 @@ export default function Page() {
     //     className="relative min-h-screen flex justify-center items-center 
     // bg-green-100 text-white"
     >
-      <div className=" flex justify-center h-full items-end absolute">
-        <Multimedia />
-      </div>
-      <div className=" text-black inset-x-0 bottom-0 absolute flex justify-end h-full items-center">
-      <PageLink id ={5}/>
+      <div className=" flex justify-start z-50 h-full  items-end absolute">
+      <Multimedia />
+        </div>
+        <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
+      <PageLink id ={5} />
         </div>
       <div className="flex justify-center items-center 
    ">

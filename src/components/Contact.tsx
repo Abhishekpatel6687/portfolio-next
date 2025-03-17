@@ -33,6 +33,7 @@
 import React from "react";
 import { Meteors } from "@/components/ui/meteors";
 import Multimedia from "./Multimedia";
+import PageLink from "./PageLink";
 
 export default function Page() {
   return (
@@ -44,6 +45,9 @@ export default function Page() {
       <div className=" flex justify-center h-full items-end absolute">
         <Multimedia />
       </div>
+      <div className=" text-black inset-x-0 bottom-0 absolute flex justify-end h-full items-center">
+      <PageLink id ={5}/>
+        </div>
       <div className="flex justify-center items-center 
    ">
   {/* Meteors background effect */}

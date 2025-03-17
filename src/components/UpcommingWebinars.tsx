@@ -80,6 +80,7 @@
 import React, { useState } from "react";
 import { PinContainer } from "./ui/3d-pin";
 import Multimedia from "./Multimedia";
+import PageLink from "./PageLink";
 
 const projects = [
   {
@@ -156,6 +157,9 @@ export default function UpcommingWebinars() {
     <div className="min-h-screen w-full  gap-4 relative bg-green-100">
            <div className=" flex justify-center h-full items-end  absolute">
       <Multimedia />
+        </div>
+        <div className=" text-black inset-x-0 bottom-0 absolute flex justify-end h-full items-center">
+      <PageLink id ={3} />
         </div>
       <div className="flex flex-wrap justify-center pt-12">
    <div className="w-full sm:max-w-[34rem] md:max-w-[40rem] grid grid-cols-2  sm:grid-cols-4 gap-4 sm:gap-0 lg:gap-4 p-4">

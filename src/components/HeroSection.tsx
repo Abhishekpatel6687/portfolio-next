@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/moving-border";
 import { Spotlight } from "./ui/Spotlight";
 import Multimedia from "./Multimedia";
+import PageLink from "./PageLink";
 
 const HeroSection = () => {
   return (
@@ -9,9 +10,13 @@ const HeroSection = () => {
     <div className=" min-h-[38rem] relative md:min-h-screen w-full bg-green-100 flex flex-col md:flex-row  overflow-hidden">
       {/* Spotlight component */}
       {/* <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" /> */}
-      <div className=" flex justify-end h-full items-end  absolute">
+         <div className=" flex inset-x-0 bottom-0 justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>
+        <div className=" text-black inset-x-0 bottom-0 absolute flex justify-end h-full items-center">
+      <PageLink id ={1} />
+        </div>
+     
       {/* Left Section */}
       <div className="w-full md:w-[44%] relative">
         {/* Large Circular Shape */}

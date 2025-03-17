@@ -21,7 +21,7 @@ const page = () => {
 <MovingCard/>
 <Contact />
 <Instructors/>
-<Footer/>
+{/* <Footer/> */}
    </main>
   )
 }

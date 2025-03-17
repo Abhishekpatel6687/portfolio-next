@@ -3,6 +3,7 @@ import Link from "next/link";
 import courseData from "../data/music_courses.json";
 import { BackgroundGradient } from "./ui/background-gradient";
 import Multimedia from "./Multimedia";
+import PageLink from "./PageLink";
 
 interface Course {
   id: number;
@@ -22,9 +23,15 @@ const About = () => {
 
   return (
     <div className="bg-green-50 relative">
-     <div className="absolute flex justify-start h-full items-end">
+     {/* <div className="absolute flex justify-start h-full items-end">
     <Multimedia />
-  </div>
+  </div> */}
+  <div className=" flex inset-x-0 bottom-0 justify-start z-50 h-full  items-end absolute">
+      <Multimedia />
+        </div>
+        <div className=" text-black inset-x-0 bottom-0 absolute flex justify-end h-full items-center">
+      <PageLink id ={2} />
+        </div>
       <div className="pt-12">
         <div className="text-center">
           <h2 className="text-lg text-teal-800 font-semibold tracking-wide">

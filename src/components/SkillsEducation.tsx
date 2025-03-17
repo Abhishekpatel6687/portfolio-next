@@ -1,6 +1,7 @@
 import { image } from "framer-motion/client";
 import React from "react";
 import Multimedia from "./Multimedia";
+import PageLink from "./PageLink";
 
 const skills = [
   { id: 1, name: "HTML", image: "/logoImage/html.png" },
@@ -52,9 +53,15 @@ const education = [
 const SkillsEducation = () => {
   return (
     <div className="min-h-min w-full bg-green-200 relative text-black">
-        <div className=" flex justify-end h-full items-end  absolute">
+        {/* <div className=" flex justify-end h-full items-end  absolute">
+      <Multimedia />
+        </div> */}
+        <div className=" flex inset-x-0 bottom-0 justify-start h-full  items-end absolute">
       <Multimedia />
         </div>
+        <div className=" text-black inset-x-0 bottom-0 absolute flex justify-end h-full items-center">
+      <PageLink id ={4}/>
+      </div>
       <div className="flex justify-center items-center pt-12">
         <h1 className="text-4xl">Skills & Education</h1>
       </div>

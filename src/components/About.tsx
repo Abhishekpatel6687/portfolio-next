@@ -2,6 +2,7 @@
 import Link from "next/link";
 import courseData from "../data/music_courses.json";
 import { BackgroundGradient } from "./ui/background-gradient";
+import Multimedia from "./Multimedia";
 
 interface Course { 
   id: number;
@@ -32,7 +33,10 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="mt-10 ">
+      <div className="mt-10 relative">
+        <div className=" flex justify-center h-full items-center max-h-screen  absolute">
+      <Multimedia/>
+        </div>
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xxl:grid-cols-8 px-10 md:px-20  gap-8 justify-center">
           {featuredCourses.map((course: Course) => (
             <div key={course.id} className="flex justify-center">

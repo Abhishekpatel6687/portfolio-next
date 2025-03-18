@@ -1,3 +1,4 @@
+
 import About from '@/components/About'
 import HeroSection from '@/components/HeroSection'
 import MovingCard from '@/components/MovingCard'
@@ -25,9 +26,9 @@ const page = () => {
       <div id="skillsEducation">
         <SkillsEducation />
       </div>
-      <div id="whyChooseUS">
+      {/* <div id="whyChooseUS">
         <WhyChooseUS />
-      </div>
+      </div> */}
       <div id="movingCard">
         <MovingCard />
       </div>
@@ -37,9 +38,9 @@ const page = () => {
       <div id="instructors">
         <Instructors />
       </div>
-      <div id="footer">
+      {/* <div id="footer">
         <Footer />
-      </div>
+      </div> */}
 
    </main>
   )

@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";  // ✅ App Router ka import
 import React, { useState, useEffect } from "react";
 
 const active = [
-  { id: 1, route: "hero" }, 
+  { id: 1, route: "/" }, 
   { id: 2, route: "about" }, 
   { id: 3, route: "contact" }, 
   { id: 4, route: "upcommingWebinars" }, 

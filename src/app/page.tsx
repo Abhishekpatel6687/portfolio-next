@@ -3,11 +3,11 @@ import About from '@/components/About'
 import HeroSection from '@/components/HeroSection'
 import MovingCard from '@/components/MovingCard'
 import UpcommingWebinars from '@/components/UpcommingWebinars'
-import WhyChooseUS from '@/components/WhyChooseUS'
 import Instructors  from '@/components/Instructors'
-import Footer from '@/components/Footer'
 import SkillsEducation from '@/components/SkillsEducation'
 import Contact from '@/components/Contact'
+import WhyChooseUS from '@/components/WhyChooseUS'
+import Footer from '@/components/Footer'
 
 
 const page = () => {
@@ -26,9 +26,6 @@ const page = () => {
       <div id="skillsEducation">
         <SkillsEducation />
       </div>
-      {/* <div id="whyChooseUS">
-        <WhyChooseUS />
-      </div> */}
       <div id="movingCard">
         <MovingCard />
       </div>
@@ -38,7 +35,10 @@ const page = () => {
       <div id="instructors">
         <Instructors />
       </div>
-      {/* <div id="footer">
+      {/* <div id="whyChooseUS">
+        <WhyChooseUS />
+      </div>
+      <div id="footer">
         <Footer />
       </div> */}
 

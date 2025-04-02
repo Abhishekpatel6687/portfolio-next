@@ -13,9 +13,9 @@ const HeroSection = () => {
          <div className=" flex justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>
-        {/* <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
-      <PageLink id ={1} />
-        </div> */}
+        <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
+  <PageLink id={1} />
+        </div>
      
       {/* Left Section */}
       <div className="w-full md:w-[44%] relative">

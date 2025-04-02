@@ -1,17 +1,22 @@
 "use client";
-import { useRouter } from "next/navigation";  // ✅ App Router ka import
+import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 
 const active = [
   { id: 1, route: "/" }, 
   { id: 2, route: "about" }, 
-  { id: 3, route: "contact" }, 
-  { id: 4, route: "upcommingWebinars" }, 
-  { id: 5, route: "skillsEducation" }
+  { id: 3, route: "upcommingWebinars" }, 
+  { id: 4, route: "skillsEducation" }, 
+  { id: 5, route: "contact" }, 
+  // { id: 6, route: "movingCard" },
+  // { id: 7, route: "instructors" },
 ];
+interface PageLinkProps {
+  id: number;
+}
 
-const PageLink: React.FC = () => {
-  const [state, setState] = useState<number>(1);  // ✅ State ko number rakho
+const PageLink: React.FC<PageLinkProps> = ({ id }) => {  
+  const [state, setState] = useState<number>(id); 
   console.log("state", state)
   const router = useRouter();
 
@@ -21,7 +26,7 @@ const PageLink: React.FC = () => {
 
   const handleClick = (id: number, route: string) => {
     setState(id); 
-    router.push(`#${route}`);  // ✅ Direct section par scroll karega
+    router.push(`#${route}`); 
   };
 
   return (

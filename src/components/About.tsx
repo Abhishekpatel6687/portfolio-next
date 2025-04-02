@@ -29,9 +29,9 @@ const About = () => {
   <div className=" flex justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>
-        {/* <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
+        <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
       <PageLink id ={2} />
-        </div> */}
+        </div>
       <div className="pt-12">
         <div className="text-center">
           <h2 className="text-lg text-teal-800 font-semibold tracking-wide">

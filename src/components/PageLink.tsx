@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 
 const active = [
   { id: 1, route: "/" }, 
@@ -16,16 +16,12 @@ interface PageLinkProps {
 }
 
 const PageLink: React.FC<PageLinkProps> = ({ id }) => {  
-  const [state, setState] = useState<number>(id); 
+  const state = id; 
   console.log("state", state)
   const router = useRouter();
 
-  useEffect(() => {
-    console.log("Updated State:", state);
-  }, [state]);
 
-  const handleClick = (id: number, route: string) => {
-    setState(id); 
+  const handleClick = (route: string) => {
     router.push(`#${route}`); 
   };
 
@@ -34,7 +30,7 @@ const PageLink: React.FC<PageLinkProps> = ({ id }) => {
       {active.map((item) => (
         <div key={item.id}>
           <div
-            onClick={() => handleClick(item.id, item.route)}
+            onClick={() => handleClick(item.route)}
             className={`w-3 h-3 rounded-full shadow-xl cursor-pointer transition-all duration-300 ${
               state === item.id ? "bg-green-800" : "bg-gray-400"
             }`}

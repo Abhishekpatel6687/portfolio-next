@@ -158,9 +158,9 @@ export default function UpcommingWebinars() {
       <div className=" flex justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>
-        <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
-      <PageLink id ={3} />
-        </div>
+        {/* <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
+      <PageLink id={3} />
+        </div> */}
       <div className="flex flex-wrap justify-center pt-12">
    <div className="w-full sm:max-w-[34rem] md:max-w-[40rem] grid grid-cols-2  sm:grid-cols-4 gap-4 sm:gap-0 lg:gap-4 p-4">
   {projectSkills.map((item, index) => (
@@ -174,7 +174,7 @@ export default function UpcommingWebinars() {
       <div className="min-h-screen w-full flex flex-wrap justify-evenly    mb-6 p-8 md:p-0 lg:p-8 ">
         {projects.map((item) => {
           return (
-            <div className="mb-20">
+            <div key={item.id} className="mb-20">
             <PinContainer title1="github Link" href1={item.github} title="project link" href={item.link}>
               <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2  w-[16rem] h-[16rem] sm:w-[20rem] sm:h-[20rem] ">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">

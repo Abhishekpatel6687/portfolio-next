@@ -1,41 +1,24 @@
-// import React from "react";
-// import { Meteors } from "@/components/ui/meteors";
 
-// export default function page() {
-//   return (
-//     <div className="relative min-h-screen flex justify-center bg-black text-white">
-//       <Meteors number={60} className="z-10 bg-white" />
-//       <div className="z-20  max-w-xl mt-36 flex flex-wrap flex-col">
-//         <h1 className="text-5xl font-bold mb-4 text-center">Contact Us</h1>
-//         <p className="text-gray-400 text-center">
-//           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-//           non quas tempore tempora consequuntur debitis praesentium
-//           reprehenderit dolor, consequatur asperiores?
-//         </p>
-//         <form className=" mt-10">
-//           <input
-//             type="text"
-//             placeholder="Your email address"
-//             className="w-full h-9 py-6 pl-4 mb-4 bg-gray-900 rounded-md"
-//           />
-//           <textarea
-//             placeholder="Your message"
-//             className="w-full h-44 px-4 py-2 mb-4 bg-gray-900 rounded-md text-white"
-//           />
-//           <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md  ">
-//             Get Started
-//           </button>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// }
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { Meteors } from "@/components/ui/meteors";
 import Multimedia from "./Multimedia";
 import PageLink from "./PageLink";
 
 export default function Page() {
+  // const [data, setData] = useState(name:"name", email:"email", message:"message")
+  // function Submit(data) {
+  //   console.log(data,"data")
+  //   try{
+  //     console.log("abhishek")
+  //     alert("submited success")
+  //   } catch(error){
+  //     alert('If you\'d like your volume saved, turn on cookies')
+  //   }
+    
+  // }
+
   return (
     <div
       className="relative min-h-screen bg-gradient-to-br to-green-950 from-black text-white"
@@ -45,9 +28,9 @@ export default function Page() {
       <div className=" flex justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>
-        <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
+        {/* <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
       <PageLink id ={5} />
-        </div>
+        </div> */}
       <div className="flex justify-center items-center 
    ">
   {/* Meteors background effect */}
@@ -67,12 +50,12 @@ export default function Page() {
     <div className="text-black flex md:w-1/2  p-4  rounded-xl flex-col gap-4 mb-4 ">
       <div className="flex flex-wrap justify-between gap-4">
         <a
-          href="mailto:abhishekPatel6687@mail.com"
+          href="mailto:abhishekpatel6687@gmail.com"
           className="flex gap-2 px-2 py-2 rounded-lg bg-pink-50 items-center  hover:bg-pink-100"
           aria-label="Send email to Abhishek Patel"
         >
           <img src="/Image/gmail.png" width={34} alt="Gmail Icon" />
-          <p className="text-sm">abhishekPatel6687@mail.com</p>
+          <p className="text-sm">abhishekpatel6687@gmail.com</p>
         </a>
 
         <a
@@ -85,7 +68,7 @@ export default function Page() {
         </a>
       </div>
 
-      <div className="flex gap-1 px-2 py-2 rounded-lg bg-green-50 items-center  hover:bg-green-200">
+      <div className="flex gap-1 px-2 py-2 rounded-lg bg-green-50 items-center  hover:bg-green-100">
         <img src="/Image/mobile.png" width={34} alt="Phone Icon" />
         <p className="text-sm text-start">Dwarika sector-8, Delhi, 110077</p>
       </div>
@@ -104,6 +87,7 @@ export default function Page() {
   </p>
       <input
         type="text"
+        // setData="name"
         placeholder="Your Name"
         className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
         required

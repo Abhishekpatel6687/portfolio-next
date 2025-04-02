@@ -12,6 +12,7 @@ const active = [
 
 const PageLink: React.FC = () => {
   const [state, setState] = useState<number>(1);  // ✅ State ko number rakho
+  console.log("state", state)
   const router = useRouter();
 
   useEffect(() => {

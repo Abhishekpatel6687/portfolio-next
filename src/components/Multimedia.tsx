@@ -51,13 +51,13 @@ const Multimedia = () => {
       {people.map((item, i) => (
         <div
           key={i}
-          className="h-10 w-10 flex items-center justify-center bg-white hover:bg-gray-400 rounded-full 
+          className="h-10 w-10 flex items-center justify-center bg-white hover:bg-green-400 rounded-full 
                    border border-gray-300 shadow-md transition-all duration-300 
                    hover:scale-110 hover:shadow-lg hover:border-white"
         >
           <Link href={item.link || "/"}>
             <Icon
-              width={28}
+              width={36}
               icon={item.image}
               className="rounded-full cursor-pointer text-gray-500 bg-white p-1 
                    transition-all duration-300 ease-in-out 

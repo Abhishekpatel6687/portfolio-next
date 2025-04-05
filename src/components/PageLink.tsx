@@ -17,7 +17,7 @@ interface PageLinkProps {
 
 const PageLink: React.FC<PageLinkProps> = ({ id }) => {  
   const state = id; 
-  console.log("state", state)
+  // console.log("state", state)
   const router = useRouter();
 
 

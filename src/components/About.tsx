@@ -43,10 +43,10 @@ const About = () => {
         </div>
       </div>
       <div className="py-12">
-        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xxl:grid-cols-8 px-10 md:px-20  gap-8 justify-center">
+        <div className=" grid z-50 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xxl:grid-cols-8 px-10 md:px-20  gap-8 justify-center">
           {featuredCourses.map((course: Course) => (
             <div key={course.id} className="flex justify-center">
-              <BackgroundGradient className="flex flex-col rounded-[22px]  dark:bg-white overflow-hidden h-full max-w-72">
+              <BackgroundGradient className="flex flex-col rounded-[22px] z-50 dark:bg-white overflow-hidden h-full max-w-72">
                 <div className="p-4 sm:p-6 flex flex-col md:flex-4  items-center text-center flex-grow">
                   <img
                     src={course.image}

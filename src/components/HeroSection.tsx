@@ -1,22 +1,67 @@
+"use client";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { Button } from "./ui/moving-border";
 import { Spotlight } from "./ui/Spotlight";
 import Multimedia from "./Multimedia";
 import PageLink from "./PageLink";
 
+const textColor = [
+  { id: 0, color: "text-red-400" },
+  { id: 1, color: "text-green-400" },
+  { id: 2, color: "text-yellow-400" },
+];
+
 const HeroSection = () => {
+  const profession = [
+    "I am React Developer",
+    "I am Designer",
+    "I am photographer",
+  ];
+  const [index, setIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [charIndex, setCharIndex] = useState(0);
+  console.log(index, "displayText");
+
+  const currentColor =
+    textColor.find((item) => item.id === index)?.color || "text-gray-700";
+  console.log(currentColor, "currentColor");
+
+  useEffect(() => {
+    const currentText = profession[index];
+
+    const timeout = setTimeout(() => {
+      if (charIndex < currentText.length) {
+        // console.log(charIndex,'charIndex')
+        setDisplayText((prev) => prev + currentText.charAt(charIndex));
+        setCharIndex(charIndex + 1);
+      } else {
+        setTimeout(() => {
+          setDisplayText("");
+          setCharIndex(0);
+          setIndex((prevIndex) => (prevIndex + 1) % profession.length);
+        }, 1500);
+      }
+    }, 100);
+
+    return () => clearTimeout(timeout);
+  }, [charIndex, index]);
   return (
     // <div className="min-h-screen w-full bg-green-100 flex flex-col overflow-hidden md:flex-row">
     <div className=" min-h-[38rem] relative md:min-h-screen w-full bg-green-100 flex flex-col md:flex-row  overflow-hidden">
       {/* Spotlight component */}
-      {/* <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" /> */}
-         <div className=" flex justify-start z-50 h-full  items-end absolute">
-      <Multimedia />
-        </div>
-        <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
-  <PageLink id={1} />
-        </div>
-     
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20 z-50"
+        fill="green"
+      />
+      <div className=" flex justify-start z-50 h-full  items-end absolute">
+        <Multimedia />
+      </div>
+      <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
+        <PageLink id={1} />
+      </div>
+
       {/* Left Section */}
       <div className="w-full md:w-[44%] relative">
         {/* Large Circular Shape */}
@@ -37,7 +82,14 @@ const HeroSection = () => {
           <h1 className="xs:mt-5 lg:mt-7 text-4xl lg:text-5xl font-bold text-green-950">
             I am Abhishek <br />
             <span className="text-2xl relative top-[-10px]">
-              I am Developer
+              {/* <div className={`${textColor.map((item)=> item.id === index) && `{item.color}`} text-2xl font-semibold text-start mt-6 h-10`}> */}
+              <div
+                className={`${currentColor} text-2xl font-semibold text-start mt-6 h-10`}
+              >
+                {/* <div className=`${index === 0 ? "bg-red-800" :"bg-green-700"}, "text-2xl text-red-700 font-semibold text-start mt-6 h-10"`> */}
+                {displayText}
+                <span className="animate-pulse">|</span>
+              </div>
             </span>
           </h1>
         </div>

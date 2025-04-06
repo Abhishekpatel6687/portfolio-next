@@ -22,11 +22,11 @@ const HeroSection = () => {
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
-  console.log(index, "displayText");
+  // console.log(index, "displayText");
 
   const currentColor =
     textColor.find((item) => item.id === index)?.color || "text-gray-700";
-  console.log(currentColor, "currentColor");
+  // console.log(currentColor, "currentColor");
 
   useEffect(() => {
     const currentText = profession[index];

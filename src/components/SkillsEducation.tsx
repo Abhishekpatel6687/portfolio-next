@@ -62,9 +62,19 @@ const SkillsEducation = () => {
         <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
       <PageLink id ={4} />
         </div>
-      <div className="flex justify-center items-center pt-12">
-        <h1 className="text-4xl">Skills & Education</h1>
+
+    <div className="flex flex-col justify-center items-center pt-12">
+    <h1 className="text-4xl">Skills & Education</h1>
+      <div className="w-[22rem] h-1 relative flex justify-center">
+        
+       <div className="absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-600 to-transparent h-[2px] w-3/4 blur-sm" />
+        <div className="absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-600 to-transparent h-px w-3/4" />
+        <div className="absolute top-0 bg-gradient-to-r from-transparent via-green-600 to-transparent h-[5px] w-1/4 blur-md" />
+        <div className="absolute inset-x-50 top-0 bg-gradient-to-r from-transparent via-green-950 to-transparent h-px w-1/4" /> 
+ 
       </div>
+    </div>
+
       <div className="lg:flex px-8 pb-12 mt-8">
         <div className="w-full lg:w-1/2 flex flex-wrap xs:px-1 sm:px-4 xl:px-12 py-6 gap-8">
           {skills.map((item) => {

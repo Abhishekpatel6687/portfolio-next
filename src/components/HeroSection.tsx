@@ -79,7 +79,7 @@ const HeroSection = () => {
         <div className="flex justify-center xs:mt-4">
           <div className="w-4 h-4 bg-gradient-to-r from-green-100 to-white rounded-full mr-1 shadow-md" />
           <h1 className="text-xl lg:text-3xl font-bold text-black">Hello,</h1>
-          <h1 className="xs:mt-5 lg:mt-7 text-4xl lg:text-5xl font-bold text-green-950">
+          <h1 className="xs:mt-5 lg:mt-7 text-4xl lg:text-5xl font-bold text-green-800">
             I am Abhishek <br />
             <span className="text-2xl relative top-[-10px]">
               {/* <div className={`${textColor.map((item)=> item.id === index) && `{item.color}`} text-2xl font-semibold text-start mt-6 h-10`}> */}

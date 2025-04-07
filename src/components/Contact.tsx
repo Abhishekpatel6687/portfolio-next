@@ -76,37 +76,48 @@ export default function Page() {
                 ></iframe>
               </div>
             </div>
-            <form className="space-y-4 text-start text-black flex md:w-1/2  p-4  rounded-xl flex-col ">
-              <p className="text-sm block xl:hidden text-gray-400 mb-2 md:mb-4">
-                We're here to help! Drop us a message and we'll get back to you
-                soon.
-              </p>
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
-                required
-              />
-              <textarea
-                placeholder="Your Message"
-                className="w-full h-32 px-4 py-2 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
-                required
-              ></textarea>
+            <form
+  action="https://formsubmit.co/abhishekpatel6687@gmail.com"
+  method="POST"
+  className="space-y-4 text-start text-black flex md:w-1/2 p-4 rounded-xl flex-col"
+>
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+  <input type="text" name="_honey" style={{ display: "none" }} />
 
-              {/* Submit button */}
-              <button
-                type="submit"
-                className=" bg-green-700 w-40 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
-              >
-                Send Message
-              </button>
-            </form>
+  <p className="text-sm block xl:hidden text-gray-400 mb-2 md:mb-4">
+    We're here to help! Drop us a message and we'll get back to you soon.
+  </p>
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
+    required
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
+    required
+  />
+  <textarea
+    name="message"
+    placeholder="Your Message"
+    className="w-full h-32 px-4 py-2 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
+    required
+  ></textarea>
+
+  <button
+    type="submit"
+    className="bg-green-700 w-40 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
+  >
+    Send Message
+  </button>
+</form>
+
           </div>
         </div>
       </div>

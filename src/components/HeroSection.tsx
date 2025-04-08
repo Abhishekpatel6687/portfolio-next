@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 // import { motion, AnimatePresence } from "framer-motion";
 // import Link from "next/link";
@@ -15,11 +15,10 @@ const textColor = [
 ];
 
 const HeroSection = () => {
-  const profession = [
-    "I am React Developer",
-    "I am Designer",
-    "I am photographer",
-  ];
+  const profession = useMemo(
+    () => ["I am React Developer", "I am Designer", "I am photographer"],
+    []
+  );
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [charIndex, setCharIndex] = useState(0);

@@ -35,11 +35,7 @@ const getVariants = (
     stagger: { y: 0, x: 0 },
   };
 
-  const isInner = direction === "inner";
-  const isBounce = direction === "bounce";
-  const isStagger = direction === "stagger";
-
-  if (isBounce) {
+  if (direction === "bounce") {
     return {
       hidden: { y: 0 },
       visible: {
@@ -53,14 +49,10 @@ const getVariants = (
       },
     };
   }
+
   if (direction === "combo-bounce-left") {
     return {
-      hidden: {
-        opacity: 0,
-        x: 100,
-        y: 0,
-        scale: 1,
-      },
+      hidden: { opacity: 0, x: 100, y: 0, scale: 1 },
       visible: {
         opacity: 1,
         x: 0,
@@ -79,18 +71,20 @@ const getVariants = (
       },
     };
   }
-  
-  if (isStagger) {
+
+  if (direction === "stagger") {
     return {
       hidden: {},
       visible: {
         transition: {
-          staggerChildren: 0.2,
+          staggerChildren: 0.3,
           delayChildren: delay,
         },
       },
     };
   }
+
+  const isInner = direction === "inner";
 
   return {
     hidden: {
@@ -123,6 +117,19 @@ const SlideIn = ({ children, direction = "up", delay = 0 }: Props) => {
       {children}
     </motion.div>
   );
+};
+
+// 🔁 Export card animation separately
+export const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
 };
 
 export default SlideIn;

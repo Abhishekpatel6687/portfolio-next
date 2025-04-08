@@ -150,8 +150,8 @@ export default function UpcommingWebinars() {
   <Image
     src={item.image}
     alt="project"
-    // width={200}
-    // height={200}
+    width={200}
+    height={200}
     className="object-contain"
   />
 </div>

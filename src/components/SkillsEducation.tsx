@@ -53,10 +53,7 @@ const education = [
 const SkillsEducation = () => {
   return (
     <div className="min-h-min w-full bg-green-200 relative text-black">
-        {/* <div className=" flex justify-end h-full items-end  absolute">
-      <Multimedia />
-        </div> */}
-    <div className=" flex justify-start z-50 h-full  items-end absolute">
+    <div className="hidden md:flex justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>
         <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
@@ -96,7 +93,7 @@ const SkillsEducation = () => {
             );
           })}
         </div>
-        <div className="w-full lg:w-1/2 flex py-6">
+        <div className="w-full lg:w-1/2 flex py-6 md:px-5 lg:px-0">
           <div className="w-[0.1rem] lg:h-full ml-2 bg-black relative rounded-full">
             {/* <div className="w-4 h-4 mt-4 bg-white rounded-full absolute left-1/2 -translate-x-1/2 top-0" /> */}
           </div>

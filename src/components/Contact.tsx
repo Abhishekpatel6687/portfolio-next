@@ -71,7 +71,7 @@ export default function Page() {
   return (
     <div className="relative min-h-screen bg-gradient-to-br to-green-950 from-black text-white">
       <Toaster position="top-right" />
-      <div className="absolute flex justify-start items-end z-10 h-full">
+      <div className="absolute hidden md:flex justify-start items-end z-10 h-full">
         <Multimedia />
       </div>
 
@@ -85,7 +85,7 @@ export default function Page() {
               We're here to help! Drop us a message and we'll get back to you soon.
             </p>
 
-            <div className="flex md:gap-12 flex-col xl:mt-16 md:flex-row md:py-5">
+            <div className="flex  flex-col xl:mt-16 md:px-2 md:flex-row md:py-5">
               <div className="text-black flex md:w-1/2 p-4 rounded-xl flex-col gap-4 mb-4">
                 <div className="flex flex-wrap justify-between gap-4">
                   <a href="mailto:abhishekpatel6687@gmail.com" className="flex gap-2 px-2 py-2 rounded-lg bg-pink-50 items-center hover:bg-pink-100">

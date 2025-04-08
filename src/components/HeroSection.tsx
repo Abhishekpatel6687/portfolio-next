@@ -55,7 +55,7 @@ const HeroSection = () => {
         className="-top-40 left-0 md:left-60 md:-top-20 z-50"
         fill="green"
       />
-      <div className=" flex justify-start z-50 h-full  items-end absolute">
+      <div className="hidden md:flex justify-start z-50 h-full  items-end absolute">
         <Multimedia />
       </div>
       <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">

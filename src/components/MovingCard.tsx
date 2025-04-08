@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
-import Multimedia from "./Multimedia";
-import PageLink from "./PageLink";
 
 const testimonials = [
   {
@@ -59,13 +57,6 @@ const testimonials = [
 const MovingCard = () => {
   return (
     <div className="relative h-[32rem] w-full  dark:bg-black dark:bg-grid-white/[0.2]">
-      {/* Multimedia Section */}
-      {/* <div className="absolute h-full flex justify-start items-end z-50">
-        <Multimedia />
-      </div>
-      <div className=" text-black inset-x-0 bottom-0 absolute flex justify-end h-full items-center">
-        <PageLink />
-      </div> */}
 
       {/* Content Section */}
       <div className="relative flex flex-col pt-8 items-center justify-center overflow-hidden">

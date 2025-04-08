@@ -105,7 +105,7 @@ export default function UpcommingWebinars() {
 
   return (
     <div className="min-h-screen w-full  gap-4 relative bg-green-100">
-      <div className=" flex justify-start z-50 h-full  items-end absolute">
+      <div className="hidden md:flex justify-start z-50 h-full  items-end absolute">
         <Multimedia />
       </div>
       <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
@@ -126,7 +126,7 @@ export default function UpcommingWebinars() {
             </div>
           ))}
         </div>
-        <div className="min-h-screen w-full flex flex-wrap justify-evenly    mb-6 p-8 md:p-0 lg:p-8 ">
+        <div className="min-h-screen w-full flex flex-wrap justify-evenly mb-6 px-8 py-4 md:mt-8">
           {showProject.map((item) => {
             return (
               <div key={item.id} className="mb-20">

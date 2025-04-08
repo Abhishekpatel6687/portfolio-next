@@ -82,7 +82,8 @@ export default function Page() {
           <div className="z-20 p-6 sm:p-8 w-[80rem] mt-4 text-center">
             <h1 className="text-2xl sm:text-4xl font-bold mb-4">Take a coffee & chat with me</h1>
             <p className="xl:block hidden text-sm text-gray-400 mb-8">
-              We're here to help! Drop us a message and we'll get back to you soon.
+            We&apos;re here to help! Drop us a message and we&apos;ll get back to
+            you soon.
             </p>
 
             <div className="flex  flex-col xl:mt-16 md:px-2 md:flex-row md:py-5">

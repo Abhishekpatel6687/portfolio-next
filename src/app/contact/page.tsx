@@ -49,7 +49,8 @@ export default function Page() {
           Take a coffee & chat with me
         </h1>
         <p className="xl:block hidden text-sm text-gray-400 mb-8">
-          We're here to help! Drop us a message and we'll get back to you soon.
+          We&apos;re here to help! Drop us a message and we&apos;ll get back to
+          you soon.
         </p>
 
         <div className="flex md:gap-12 flex-col rounded-2xl xl:mt-16 md:flex-row md:py-5">
@@ -76,7 +77,9 @@ export default function Page() {
 
             <div className="flex gap-1 px-2 py-2 rounded-lg bg-green-50 items-center  hover:bg-green-200">
               <img src="/Image/mobile.png" width={34} alt="Phone Icon" />
-              <p className="text-sm text-start">Dwarika sector-8, Delhi, 110077</p>
+              <p className="text-sm text-start">
+                Dwarika sector-8, Delhi, 110077
+              </p>
             </div>
             <div className="rounded-lg overflow-hidden ">
               <iframe
@@ -88,9 +91,10 @@ export default function Page() {
             </div>
           </div>
           <form className="space-y-4 text-start text-black flex md:w-1/2  p-4  rounded-xl flex-col ">
-          <p className="text-sm block xl:hidden text-gray-400 mb-2 md:mb-4">
-          We're here to help! Drop us a message and we'll get back to you soon.
-        </p>
+            <p className="text-sm block xl:hidden text-gray-400 mb-2 md:mb-4">
+              We're here to help! Drop us a message and we'll get back to you
+              soon.
+            </p>
             <input
               type="text"
               placeholder="Your Name"

@@ -1,6 +1,7 @@
 
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import Image from "next/image";
 import { PinContainer } from "./ui/3d-pin";
 import Multimedia from "./Multimedia";
 import PageLink from "./PageLink";
@@ -145,9 +146,15 @@ export default function UpcommingWebinars() {
                         {item.description}
                       </span>
                     </div>
-                    <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
-                      <img src={item.image} alt="netflix" />
-                    </div>
+                    <div className="flex flex-1 w-full h-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
+  <Image
+    src={item.image}
+    alt="project"
+    // width={200}
+    // height={200}
+    className="object-contain"
+  />
+</div>
                   </div>
                 </PinContainer>
               </div>

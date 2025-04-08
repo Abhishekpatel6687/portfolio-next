@@ -3,6 +3,7 @@
 import React from "react";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
+import Image from "next/image";
 import { yupResolver } from "@hookform/resolvers/yup";
 import toast, { Toaster } from "react-hot-toast";
 import { Meteors } from "@/components/ui/meteors";
@@ -10,9 +11,15 @@ import Multimedia from "./Multimedia";
 import PageLink from "./PageLink";
 
 const validationSchema = yup.object({
-  name: yup.string().required("Name is required").min(3, "Minimum 3 characters"),
+  name: yup
+    .string()
+    .required("Name is required")
+    .min(3, "Minimum 3 characters"),
   email: yup.string().required("Email is required").email("Invalid email"),
-  message: yup.string().required("Message is required").min(10, "Minimum 10 characters"),
+  message: yup
+    .string()
+    .required("Message is required")
+    .min(10, "Minimum 10 characters"),
 });
 
 type ContactFormValues = {
@@ -32,7 +39,10 @@ export default function Page() {
     register,
     reset,
     handleSubmit,
-    formState: { errors, isValid },
+    formState: { 
+      errors,
+      // isValid
+    },
     setFocus,
   } = useForm<ContactFormValues>({
     defaultValues,
@@ -49,19 +59,24 @@ export default function Page() {
 
   const onValidSubmit = async (data: ContactFormValues) => {
     try {
-      const res = await fetch("https://formsubmit.co/ajax/abhishekpatel6687@gmail.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const res = await fetch(
+        "https://formsubmit.co/ajax/abhishekpatel6687@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
 
       if (res.status === 200) {
         toast.success("Message sent successfully!");
         reset();
       } else {
-        toast.error("Something went wrong, but your message might have been sent.");
+        toast.error(
+          "Something went wrong, but your message might have been sent."
+        );
       }
     } catch (error) {
       toast.error("Network error. Please try again later.");
@@ -80,27 +95,35 @@ export default function Page() {
 
         <div className="w-[96%] min-h-screen flex justify-center items-center">
           <div className="z-20 p-6 sm:p-8 w-[80rem] mt-4 text-center">
-            <h1 className="text-2xl sm:text-4xl font-bold mb-4">Take a coffee & chat with me</h1>
+            <h1 className="text-2xl sm:text-4xl font-bold mb-4">
+              Take a coffee & chat with me
+            </h1>
             <p className="xl:block hidden text-sm text-gray-400 mb-8">
-            We&apos;re here to help! Drop us a message and we&apos;ll get back to
-            you soon.
+              We&apos;re here to help! Drop us a message and we&apos;ll get back
+              to you soon.
             </p>
 
             <div className="flex  flex-col xl:mt-16 md:px-2 md:flex-row md:py-5">
               <div className="text-black flex md:w-1/2 p-4 rounded-xl flex-col gap-4 mb-4">
                 <div className="flex flex-wrap justify-between gap-4">
-                  <a href="mailto:abhishekpatel6687@gmail.com" className="flex gap-2 px-2 py-2 rounded-lg bg-pink-50 items-center hover:bg-pink-100">
-                    <img src="/Image/gmail.png" width={34} alt="Gmail Icon" />
+                  <a
+                    href="mailto:abhishekpatel6687@gmail.com"
+                    className="flex gap-2 px-2 py-2 rounded-lg bg-pink-50 items-center hover:bg-pink-100"
+                  >
+                    <Image src="/Image/gmail.png" width={34} height={34} alt="Gmail Icon" />
                     <p className="text-sm">abhishekpatel6687@gmail.com</p>
                   </a>
-                  <a href="tel:+917071326687" className="flex gap-1 pr-24 pl-1 py-2 rounded-lg bg-green-100 items-center hover:bg-green-200">
-                    <img src="/Image/mobile.png" width={34} alt="Phone Icon" />
+                  <a
+                    href="tel:+917071326687"
+                    className="flex gap-1 pr-24 pl-1 py-2 rounded-lg bg-green-100 items-center hover:bg-green-200"
+                  >
+                    <Image src="/Image/mobile.png" width={34} height={34} alt="Phone Icon" />
                     <p className="text-sm">+91 7071326687</p>
                   </a>
                 </div>
 
                 <div className="flex gap-1 px-2 py-2 rounded-lg bg-green-50 items-center hover:bg-green-100">
-                  <img src="/Image/mobile.png" width={34} alt="Location Icon" />
+                  <Image src="/Image/mobile.png" width={34} height={34} alt="Location Icon" />
                   <p className="text-sm">Dwarika sector-8, Delhi, 110077</p>
                 </div>
 
@@ -124,7 +147,11 @@ export default function Page() {
                   placeholder="Your Name"
                   className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
                 />
-                {errors.name && <span className="text-red-600 text-sm">{errors.name.message}</span>}
+                {errors.name && (
+                  <span className="text-red-600 text-sm">
+                    {errors.name.message}
+                  </span>
+                )}
 
                 <input
                   type="email"
@@ -132,14 +159,22 @@ export default function Page() {
                   placeholder="Your Email"
                   className="w-full h-12 px-4 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
                 />
-                {errors.email && <span className="text-red-600 text-sm">{errors.email.message}</span>}
+                {errors.email && (
+                  <span className="text-red-600 text-sm">
+                    {errors.email.message}
+                  </span>
+                )}
 
                 <textarea
                   {...register("message")}
                   placeholder="Your Message"
                   className="w-full h-32 px-4 py-2 bg-white bg-opacity-80 rounded-md text-gray-600 focus:outline-none focus:ring-2 focus:ring-green-900"
                 ></textarea>
-                {errors.message && <span className="text-red-600 text-sm">{errors.message.message}</span>}
+                {errors.message && (
+                  <span className="text-red-600 text-sm">
+                    {errors.message.message}
+                  </span>
+                )}
 
                 <button
                   type="submit"

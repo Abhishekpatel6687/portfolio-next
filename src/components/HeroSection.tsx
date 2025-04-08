@@ -47,7 +47,7 @@ const HeroSection = () => {
     }, 100);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, index]);
+  }, [charIndex, index, profession]);
   return (
     // <div className="min-h-screen w-full bg-green-100 flex flex-col overflow-hidden md:flex-row">
     <div className=" min-h-[38rem] relative md:min-h-screen w-full bg-green-100 flex flex-col md:flex-row  overflow-hidden">

@@ -79,6 +79,7 @@ export default function Page() {
         );
       }
     } catch (error) {
+      console.error("Error sending message:", error);
       toast.error("Network error. Please try again later.");
     }
   };

@@ -12,7 +12,6 @@ type DirectionType =
   | "stagger"
   | "combo-bounce-left";
 
-
 type Props = {
   children: React.ReactNode;
   direction?: DirectionType;
@@ -111,7 +110,7 @@ const SlideIn = ({ children, direction = "up", delay = 0 }: Props) => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: direction !== "bounce" }}
+      viewport={{ once: false, amount: 0.5 }}
       variants={getVariants(direction, delay)}
     >
       {children}

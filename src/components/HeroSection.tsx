@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import SlideIn from "./SlideIn";
 import Image from "next/image";
+import { motion } from "framer-motion";
 // import { Button } from "./ui/moving-border";
 import { Spotlight } from "./ui/Spotlight";
 import Multimedia from "./Multimedia";
@@ -97,30 +98,49 @@ const HeroSection = () => {
 
       <div className="relative w-full md:w-[56%] flex justify-center md:block">
         <div className="w-20 h-20 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-gradient-to-r from-green-100 to-white rounded-full ml-[26rem] md:ml-[26rem] lg:ml-[44rem] shadow-2xl absolute" />
+        <SlideIn direction="left" delay={0.2}>
+  <motion.div
+    animate={{ y: [0, -10, 0] }}
+    transition={{
+      duration: 1.5,
+      ease: "easeInOut",
+      repeat: Infinity,
+    }}
+  >
+    <div className="w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white rounded-full flex justify-center items-center shadow-2xl absolute ml-[-14.2rem] sm:ml-[-20rem] md:ml-[18rem] lg:ml-[24rem] mt-5 md:mt-[5rem]">
+      <Image
+        src="/logoImage/react.png"
+        alt="React Logo"
+        width={48}
+        height={48}
+        className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
+      />
+    </div>
+  </motion.div>
+</SlideIn>
 
-        <SlideIn direction="combo-bounce-left">
-          <div className="w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white rounded-full flex justify-center items-center shadow-2xl absolute ml-[-14.2rem] sm:ml-[-20rem] md:ml-[18rem] lg:ml-[24rem] mt-5 md:mt-[5rem]">
-            <Image
-              src="/logoImage/react.png"
-              alt="React Logo"
-              width={48}
-              height={48}
-              className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
-            />
-          </div>
-        </SlideIn>
 
-        <SlideIn direction="combo-bounce-left">
-          <div className="w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white rounded-full shadow-2xl absolute ml-[-17.4rem] sm:ml-[-22rem] md:ml-[20.6rem] lg:ml-[28rem] mt-28 md:mt-[13rem] lg:mt-[16rem]">
-            <Image
-              src="/logoImage/js.png"
-              alt="JavaScript Logo"
-              width={56}
-              height={56}
-              className="w-14 h-14 md:w-24 md:h-24 lg:w-24 lg:h-24 md:pr-3 lg:pr-0 md:mt-[-0.8rem] lg:mt-[-0.6rem]"
-            />
-          </div>
-        </SlideIn>
+<SlideIn direction="left" delay={0.4}>
+  <motion.div
+    animate={{ y: [0, -10, 0] }}
+    transition={{
+      duration: 1.5,
+      ease: "easeInOut",
+      repeat: Infinity,
+    }}
+  >
+    <div className="w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white rounded-full shadow-2xl absolute ml-[-17.4rem] sm:ml-[-22rem] md:ml-[20.6rem] lg:ml-[28rem] mt-28 md:mt-[13rem] lg:mt-[16rem]">
+      <Image
+        src="/logoImage/js.png"
+        alt="JavaScript Logo"
+        width={56}
+        height={56}
+        className="w-14 h-14 md:w-24 md:h-24 lg:w-24 lg:h-24 md:pr-3 lg:pr-0 md:mt-[-0.8rem] lg:mt-[-0.6rem]"
+      />
+    </div>
+  </motion.div>
+</SlideIn>
+
 
         <SlideIn direction="inner">
           <div className="origin-center w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-gradient-to-r from-green-100 to-white rounded-full shadow-2xl mt-[1rem] ml-20 sm:ml-0 md:mt-28 absolute md:relative">
@@ -134,7 +154,14 @@ const HeroSection = () => {
           </div>
         </SlideIn>
 
-        <SlideIn direction="combo-bounce-left">
+        <SlideIn direction="left">
+        <motion.div
+    animate={{ y: [0, -10, 0] }}
+    transition={{
+      duration: 1.5,
+      ease: "easeInOut",
+      repeat: Infinity,
+    }}>
           <div className="w-16 h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white rounded-full flex justify-center items-center shadow-2xl absolute ml-[-13.4rem] sm:ml-[-19rem] md:ml-[18rem] lg:ml-[23.8rem] mt-52 md:mt-[-2.4rem] lg:mt-[-3.8rem]">
             <Image
               src="/logoImage/redux.png"
@@ -144,6 +171,7 @@ const HeroSection = () => {
               className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20"
             />
           </div>
+          </motion.div>
         </SlideIn>
 
         <div className="w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-green-100 to-white rounded-full shadow-2xl absolute ml-[21rem] sm:ml-[26rem] mt-52 md:mt-14 md:ml-[23rem] lg:mt-6 lg:ml-[42rem]" />

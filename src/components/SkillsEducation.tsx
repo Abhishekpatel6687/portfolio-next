@@ -1,5 +1,5 @@
-import { image } from "framer-motion/client";
 import React from "react";
+import Image from "next/image";
 import Multimedia from "./Multimedia";
 import PageLink from "./PageLink";
 
@@ -78,7 +78,7 @@ const SkillsEducation = () => {
             return (
               <div key={item.id} className=" w-32 h-32 flex items-center justify-center flex-col ">
                 <div className="w-24 h-24 flex  items-center justify-center bg-white rounded-full relative ">
-                  <img
+                  <Image
                     src={item.image}
                     className=" absolute"
                     height={50}

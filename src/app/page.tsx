@@ -6,8 +6,8 @@ import UpcommingWebinars from '@/components/UpcommingWebinars'
 import Instructors  from '@/components/Instructors'
 import SkillsEducation from '@/components/SkillsEducation'
 import Contact from '@/components/Contact'
-import WhyChooseUS from '@/components/WhyChooseUS'
-import Footer from '@/components/Footer'
+// import WhyChooseUS from '@/components/WhyChooseUS'
+// import Footer from '@/components/Footer'
 
 
 const page = () => {

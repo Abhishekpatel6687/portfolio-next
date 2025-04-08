@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import courseData from "../data/music_courses.json";
 import { BackgroundGradient } from "./ui/background-gradient";
 import Multimedia from "./Multimedia";
@@ -48,9 +49,11 @@ const About = () => {
             <div key={course.id} className="flex justify-center">
               <BackgroundGradient className="flex flex-col rounded-[22px] z-50 dark:bg-white overflow-hidden h-full max-w-72">
                 <div className="p-4 sm:p-6 flex flex-col md:flex-4  items-center text-center flex-grow">
-                  <img
+                  <Image
                     src={course.image}
                     alt="img"
+                    width={96}
+                    height={96}
                     className="w-24 h-24 object-cover"
                   />
                   <p className="text-lg sm:text-xl text-black mt-4 mb-2 font-bold">

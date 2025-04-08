@@ -9,7 +9,7 @@ const ThankYouPage = () => {
       <div className="bg-white shadow-lg rounded-2xl p-6 md:p-10 max-w-xl text-center">
         <h1 className="text-3xl font-bold text-green-600 mb-4">🎉 Thank You!</h1>
         <p className="text-gray-700 mb-6">
-          Your form has been successfully submitted. We'll get back to you shortly.
+          Your form has been successfully submitted. We&apos;ll get back to you shortly.
         </p>
 
         <Link href="/">

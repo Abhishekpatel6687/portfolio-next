@@ -96,7 +96,7 @@ export default function Page() {
         <Meteors number={60} className="z-10" />
 
         <div className="w-[96%] min-h-screen flex justify-center items-center">
-          <div className="z-20 p-6 sm:p-8 mt-4 text-center">
+          <div className="z-20 p-6 sm:p-8 w-[80rem] mt-4 text-center">
             <h1 className="text-2xl sm:text-4xl font-bold mb-4">
               Take a coffee & chat with me
             </h1>

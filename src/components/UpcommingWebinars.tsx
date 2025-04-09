@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -113,14 +112,14 @@ export default function UpcommingWebinars() {
         <PageLink id={3} />
       </div>
       <div className="flex flex-wrap justify-center pt-12">
-        <div className="w-full sm:max-w-[34rem] md:max-w-[40rem] grid grid-cols-2  sm:grid-cols-4 gap-4 sm:gap-0 lg:gap-4 p-4">
+        <div className="w-full sm:max-w-[34rem] md:max-w-[40rem] grid grid-cols-4 gap-0 lg:gap-4 px-2 sm:px-0 p-0 sm:p-4">
           {projectSkills.map((item, index) => (
-            <div key={index} className="flex justify-center">
+            <div key={index} className="flex justify-center items-center">
               <button
                 onClick={() => handleProject(item)}
                 className={`${
                   activeButton === item ? "bg-green-900" : "bg-green-600"
-                } z-50 text-sm md:text-md rounded-lg py-2 px-5 text-white hover:text-black hover:bg-green-500 transition duration-300`}
+                } z-50 text-xs md:text-md rounded-lg py-2 px-3 sm:py-2 sm:px-5 text-white hover:text-black hover:bg-green-500 transition duration-300`}
               >
                 {item}
               </button>
@@ -147,14 +146,14 @@ export default function UpcommingWebinars() {
                       </span>
                     </div>
                     <div className="flex flex-1 w-full h-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
-  <Image
-    src={item.image}
-    alt="project"
-    width={200}
-    height={200}
-    className="object-contain"
-  />
-</div>
+                      <Image
+                        src={item.image}
+                        alt="project"
+                        width={290}
+                        height={200}
+                        className="object-fill"
+                      />
+                    </div>
                   </div>
                 </PinContainer>
               </div>

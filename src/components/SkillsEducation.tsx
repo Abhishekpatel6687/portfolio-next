@@ -74,10 +74,10 @@ const SkillsEducation = () => {
     </div>
 
       <div className="lg:flex px-8 pb-12 mt-8">
-        <div className="w-full lg:w-1/2 flex flex-wrap xs:px-1 sm:px-4 xl:px-12 py-6 gap-8">
+        <div className="w-full lg:w-1/2 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-4  xs:px-1 sm:px-4 xl:px-12 py-6 gap-8">
           {skills.map((item) => {
             return (
-              <div key={item.id} className=" w-32 h-32 flex items-center justify-center flex-col ">
+              <div key={item.id} className="  flex items-center  justify-center flex-col ">
                 <SlideIn direction="right">
                 <div className="w-24 h-24 flex  items-center justify-center bg-white rounded-full relative ">
                   <Image
@@ -88,10 +88,10 @@ const SkillsEducation = () => {
                     alt="html"
                   />
                 </div>
-                <div className="mt-2">
-                  <p className="text-sm font-medium">{item.name}</p>
-                </div>
                 </SlideIn>
+                <div className="mt-2">
+                  <p className="text-sm text-center font-medium">{item.name}</p>
+                </div>
               </div>
             );
           })}
@@ -107,9 +107,9 @@ const SkillsEducation = () => {
                 <div className="w-1 h-full relative rounded-full">
                   <div className="w-4 h-4 mt-4 mr-20 bg-green-800 rounded-full absolute -translate-x-1/2 top-0" />
                 </div>
-                <SlideIn direction="left">
 
                 <div className="p-3 flex w-full justify-between mr-6">
+                <SlideIn direction="left">
                   <div>
                     <p className="font-bold">{i.role}</p>
                     <p className="xs:block sm:hidden text-sm text-gray-800">
@@ -117,11 +117,13 @@ const SkillsEducation = () => {
                     </p>
                     <p className="text-sm mt-1">{i.description}</p>
                   </div>
+                </SlideIn>
+                <SlideIn direction="left">
                   <p className="xs:hidden sm:block  text-sm text-gray-800">
                     {i.date}
                   </p>
-                </div>
                 </SlideIn>
+                </div>
               </div>
             ))}
           </div>

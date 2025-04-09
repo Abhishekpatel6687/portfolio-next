@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Multimedia from "./Multimedia";
 import PageLink from "./PageLink";
+import SlideIn from "./SlideIn";
 
 const skills = [
   { id: 1, name: "HTML", image: "/logoImage/html.png" },
@@ -77,6 +78,7 @@ const SkillsEducation = () => {
           {skills.map((item) => {
             return (
               <div key={item.id} className=" w-32 h-32 flex items-center justify-center flex-col ">
+                <SlideIn direction="right">
                 <div className="w-24 h-24 flex  items-center justify-center bg-white rounded-full relative ">
                   <Image
                     src={item.image}
@@ -89,10 +91,12 @@ const SkillsEducation = () => {
                 <div className="mt-2">
                   <p className="text-sm font-medium">{item.name}</p>
                 </div>
+                </SlideIn>
               </div>
             );
           })}
         </div>
+       
         <div className="w-full lg:w-1/2 flex py-6 md:px-5 lg:px-0">
           <div className="w-[0.1rem] lg:h-full ml-2 bg-black relative rounded-full">
             {/* <div className="w-4 h-4 mt-4 bg-white rounded-full absolute left-1/2 -translate-x-1/2 top-0" /> */}
@@ -103,6 +107,8 @@ const SkillsEducation = () => {
                 <div className="w-1 h-full relative rounded-full">
                   <div className="w-4 h-4 mt-4 mr-20 bg-green-800 rounded-full absolute -translate-x-1/2 top-0" />
                 </div>
+                <SlideIn direction="left">
+
                 <div className="p-3 flex w-full justify-between mr-6">
                   <div>
                     <p className="font-bold">{i.role}</p>
@@ -115,6 +121,7 @@ const SkillsEducation = () => {
                     {i.date}
                   </p>
                 </div>
+                </SlideIn>
               </div>
             ))}
           </div>

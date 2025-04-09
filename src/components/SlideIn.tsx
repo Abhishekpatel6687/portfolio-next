@@ -1,7 +1,8 @@
 "use client";
 import { motion, Variants } from "framer-motion";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
+// Define Direction Types
 type DirectionType =
   | "up"
   | "down"
@@ -12,21 +13,19 @@ type DirectionType =
   | "stagger"
   | "combo-bounce-left";
 
+// Props definition
 type Props = {
   children: React.ReactNode;
   direction?: DirectionType;
   delay?: number;
 };
 
-const getVariants = (
-  direction: DirectionType,
-  delay: number = 0
-): Variants => {
+// Variants for slide-in animations
+const getVariants = (direction: DirectionType, delay: number = 0): Variants => {
   const dist = 100;
-
   const directions = {
     up: { y: dist, x: 0 },
-    down: { y: -dist, x: 0 },
+    down: { y: -dist, x: 0 }, // Comes in from above
     left: { y: 0, x: dist },
     right: { y: 0, x: -dist },
     inner: { y: 0, x: 0 },
@@ -105,20 +104,7 @@ const getVariants = (
   };
 };
 
-const SlideIn = ({ children, direction = "up", delay = 0 }: Props) => {
-  return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.5 }}
-      variants={getVariants(direction, delay)}
-    >
-      {children}
-    </motion.div>
-  );
-};
-
-// 🔁 Export card animation separately
+// Card animation variant for separate use
 export const cardVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -129,6 +115,28 @@ export const cardVariants = {
       ease: "easeOut",
     },
   },
+};
+
+// SlideIn component
+const SlideIn = ({ children, direction = "up", delay = 0 }: Props) => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Ensure rendering only on client-side
+  }, []);
+
+  if (!isClient) return null;
+
+  return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.5 }}
+      variants={getVariants(direction, delay)}
+    >
+      {children}
+    </motion.div>
+  );
 };
 
 export default SlideIn;

@@ -1,20 +1,18 @@
-
-import About from '@/components/About'
-import HeroSection from '@/components/HeroSection'
-import MovingCard from '@/components/MovingCard'
-import UpcommingWebinars from '@/components/UpcommingWebinars'
-import Instructors  from '@/components/Instructors'
-import SkillsEducation from '@/components/SkillsEducation'
-import Contact from '@/components/Contact'
+import About from "@/components/About";
+import HeroSection from "@/components/HeroSection";
+import MovingCard from "@/components/MovingCard";
+import UpcommingWebinars from "@/components/UpcommingWebinars";
+import Instructors from "@/components/Instructors";
+import SkillsEducation from "@/components/SkillsEducation";
+import Contact from "@/components/Contact";
 // import WhyChooseUS from '@/components/WhyChooseUS'
 // import Footer from '@/components/Footer'
-
 
 const page = () => {
   return (
     // bg-grid-white/[0.02]
-   <main className='min-h-screen bg-backColor antialiased '>
-    <div id="/">
+    <main className="min-h-screen bg-backColor antialiased ">
+      <div id="/">
         <HeroSection />
       </div>
       <div id="about">
@@ -41,9 +39,8 @@ const page = () => {
       <div id="footer">
         <Footer />
       </div> */}
+    </main>
+  );
+};
 
-   </main>
-  )
-}
-
-export default page
+export default page;

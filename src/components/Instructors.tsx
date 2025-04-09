@@ -5,7 +5,7 @@ import { WavyBackground } from "./ui/wavy-background";
 
 const people = [
   {
-    id: 1, 
+    id: 1,
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/abhishek-patel-2a6599240/",
     designation: "Software Engineer",
@@ -46,7 +46,7 @@ const instructors = () => {
     <div className="relative h-[18rem] overflow-hidden flex justify-center">
       <WavyBackground className="w-full max-w-7xl mx-auto flex flex-col justify-center">
         {/* SlideIn for "Frontend Developer" */}
-        <SlideIn direction="down">
+        <SlideIn direction="right">
           <div>
             <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
               Frontend Developer
@@ -58,7 +58,6 @@ const instructors = () => {
         <p className="text-base md:text-lg text-white text-center mb-4">
           I created a responsive, designer and complex web application.
         </p>
-        
         {/* AnimatedTooltip with social links */}
         <div className="flex flex-row justify-center mb-10 w-full">
           <AnimatedTooltip items={people} />

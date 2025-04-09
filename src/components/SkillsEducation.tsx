@@ -53,7 +53,7 @@ const education = [
 
 const SkillsEducation = () => {
   return (
-    <div className="min-h-min w-full bg-green-200 relative text-black">
+    <div className="min-h-min w-full overflow-x-hidden bg-green-200 relative text-black">
     <div className="hidden md:flex justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>

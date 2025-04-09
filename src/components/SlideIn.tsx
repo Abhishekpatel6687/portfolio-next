@@ -1,8 +1,7 @@
 "use client";
 import { motion, Variants } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-// Define Direction Types
 type DirectionType =
   | "up"
   | "down"
@@ -13,19 +12,17 @@ type DirectionType =
   | "stagger"
   | "combo-bounce-left";
 
-// Props definition
 type Props = {
   children: React.ReactNode;
   direction?: DirectionType;
   delay?: number;
 };
 
-// Variants for slide-in animations
 const getVariants = (direction: DirectionType, delay: number = 0): Variants => {
   const dist = 100;
   const directions = {
     up: { y: dist, x: 0 },
-    down: { y: -dist, x: 0 }, // Comes in from above
+    down: { y: -dist, x: 0 },
     left: { y: 0, x: dist },
     right: { y: 0, x: -dist },
     inner: { y: 0, x: 0 },
@@ -104,7 +101,6 @@ const getVariants = (direction: DirectionType, delay: number = 0): Variants => {
   };
 };
 
-// Card animation variant for separate use
 export const cardVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -117,16 +113,7 @@ export const cardVariants = {
   },
 };
 
-// SlideIn component
 const SlideIn = ({ children, direction = "up", delay = 0 }: Props) => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // Ensure rendering only on client-side
-  }, []);
-
-  if (!isClient) return null;
-
   return (
     <motion.div
       initial="hidden"

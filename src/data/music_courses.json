@@ -31,7 +31,7 @@
             "instructor": "Mark Lee",
             "category": "Marketing",
             "isFeatured": true,
-            "image": "/logoImage/reactreact.png"
+            "image": "/logoImage/jsLogo.png"
         },
         {
             "id": 4,
@@ -42,7 +42,7 @@
             "instructor": "Jane Cooper",
             "category": "Photography",
             "isFeatured": true,
-            "image": "/logoImage/jsLogo.png"
+            "image": "/logoImage/reactreact.png"
         },
         {
             "id": 5,
@@ -53,7 +53,7 @@
             "instructor": "Robert King",
             "category": "Finance",
             "isFeatured": true,
-            "image": "/logoImage/tailwind1.png/"
+            "image": "/logoImage/redux1.png"
         },
         {
             "id": 6,
@@ -64,23 +64,35 @@
             "instructor": "Sophia White",
             "category": "Health & Wellness",
             "isFeatured": true,
-            "image": "/logoImage/git1.png"
+            "image": "/logoImage/tailwind1.png"
         },
         {
             "id": 7,
-            "title": "GIT & GITHUB",
+            "title": "Next.js",
             "slug": "creative-writing-workshop",
             "description": "Unlock your creativity and craft compelling stories.",
             "price": 69.99,
             "instructor": "Emily Clark",
             "category": "Writing",
             "isFeatured": true,
-            "image": "/logoImage/redux1.png"
+            "image": "/logoImage/nextjs.png"
 
         },
         {
             "id": 8,
-            "title": "GIT & GITHUB",
+            "title": "Sass",
+            "slug": "creative-writing-workshop",
+            "description": "Unlock your creativity and craft compelling stories.",
+            "price": 69.99,
+            "instructor": "Emily Clark",
+            "category": "Writing",
+            "isFeatured": true,
+            "image": "/logoImage/sass1.png"
+
+        },
+        {
+            "id": 9,
+            "title": "TypeScript",
             "slug": "creative-writing-workshop",
             "description": "Unlock your creativity and craft compelling stories.",
             "price": 69.99,
@@ -88,6 +100,18 @@
             "category": "Writing",
             "isFeatured": true,
             "image": "/logoImage/typeScript1.png"
+
+        },
+        {
+            "id": 10,
+            "title": "GIT & GITHUB",
+            "slug": "creative-writing-workshop",
+            "description": "Unlock your creativity and craft compelling stories.",
+            "price": 69.99,
+            "instructor": "Emily Clark",
+            "category": "Writing",
+            "isFeatured": true,
+            "image": "/logoImage/git1.png"
 
         }
         

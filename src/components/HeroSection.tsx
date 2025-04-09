@@ -72,7 +72,7 @@ const HeroSection = () => {
         </div>
 
         <div className="hidden md:block w-16 h-16 bg-gradient-to-r from-green-100 to-white rounded-full md:ml-[20rem] lg:ml-[36rem] shadow-xl md:mb-20" />
-        <div className="flex justify-center xs:mt-4">
+        <div className="flex justify-center xs:mt-6">
           <div className="w-4 h-4 bg-gradient-to-r from-green-100 to-white rounded-full mr-1 shadow-md" />
           <SlideIn direction="right">
             <h1 className="text-xl lg:text-3xl font-bold text-black">Hello,</h1>
@@ -83,7 +83,7 @@ const HeroSection = () => {
               I am Abhishek <br />
 
 
-              <span className="text-2xl relative top-[-10px]">
+              <span className="text-2xl relative top-[-20px]">
                 <div
                   className={`${currentColor} text-2xl font-semibold text-start mt-6 h-10`}
                 >
@@ -102,7 +102,7 @@ const HeroSection = () => {
 
       <div className="relative w-full md:w-[56%] flex justify-center md:block">
         <div className="w-20 h-20 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-gradient-to-r from-green-100 to-white rounded-full ml-[26rem] md:ml-[26rem] lg:ml-[44rem] shadow-2xl absolute" />
-        <SlideIn direction="left" delay={0.2}>
+        <SlideIn direction="left">
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{
@@ -111,7 +111,7 @@ const HeroSection = () => {
               repeat: Infinity,
             }}
           >
-            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex justify-center items-center shadow-2xl absolute ml-[-8rem] sm:ml-[-10rem] md:ml-[17rem] lg:ml-[24rem] mt-5 md:mt-[5rem]">
+            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex justify-center items-center shadow-2xl absolute ml-[-9rem] sm:ml-[-10rem] md:ml-[17rem] lg:ml-[24rem] mt-5 md:mt-[5rem]">
               <Image
                 src="/logoImage/react.png"
                 alt="React Logo"
@@ -123,7 +123,7 @@ const HeroSection = () => {
           </motion.div>
         </SlideIn>
 
-        <SlideIn direction="left" delay={0.4}>
+        <SlideIn direction="left">
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{
@@ -132,7 +132,7 @@ const HeroSection = () => {
               repeat: Infinity,
             }}
           >
-            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-full shadow-2xl absolute ml-[-10rem] sm:ml-[-12rem] md:ml-[19.6rem] lg:ml-[28rem] mt-28 md:mt-[13rem] lg:mt-[16rem]">
+            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-full shadow-2xl absolute ml-[-10.8rem] sm:ml-[-12rem] md:ml-[19.6rem] lg:ml-[28rem] mt-28 md:mt-[13rem] lg:mt-[16rem]">
               <Image
                 src="/logoImage/js.png"
                 alt="JavaScript Logo"
@@ -165,7 +165,7 @@ const HeroSection = () => {
               repeat: Infinity,
             }}
           >
-            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex justify-center items-center shadow-2xl absolute ml-[-8rem] sm:ml-[-10rem] md:ml-[18rem] lg:ml-[23.8rem] mt-52 md:mt-[-2.4rem] lg:mt-[-3.8rem]">
+            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex justify-center items-center shadow-2xl absolute ml-[-9rem] sm:ml-[-10rem] md:ml-[18rem] lg:ml-[23.8rem] mt-52 md:mt-[-2.4rem] lg:mt-[-3.8rem]">
               <Image
                 src="/logoImage/redux.png"
                 alt="Redux Logo"

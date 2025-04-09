@@ -131,7 +131,7 @@ const SlideIn = ({ children, direction = "up", delay = 0 }: Props) => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: false, amount: 0.2 }}
       variants={getVariants(direction, delay)}
     >
       {children}

@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
 import courseData from "../data/music_courses.json";
 import { BackgroundGradient } from "./ui/background-gradient";

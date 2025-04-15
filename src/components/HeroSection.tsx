@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import SlideIn from "./SlideIn";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -29,7 +29,7 @@ const HeroSection = () => {
     "I develop pixel-perfect websites.",
     "I love building with Tailwind CSS.",
   ];
-  
+
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [charIndex, setCharIndex] = useState(0);

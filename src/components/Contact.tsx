@@ -88,7 +88,7 @@ export default function Page() {
   return (
     <div className="relative min-h-screen w-full overflow-x-hidden bg-gradient-to-br to-green-950 from-black text-white">
       <Toaster position="top-right" />
-      <div className="absolute hidden md:flex justify-start items-end z-10 h-full">
+      <div className="absolute py-2 hidden md:flex justify-start items-end z-10 h-full">
         <Multimedia />
       </div>
 
@@ -96,13 +96,12 @@ export default function Page() {
         <Meteors number={60} className="z-10" />
 
         <div className="w-[96%] min-h-screen flex justify-center items-center">
-          <div className="z-20 p-6 sm:p-8 w-[80rem] mt-4 text-center">
-            <h1 className="text-2xl sm:text-4xl font-bold mb-4">
-              Take a coffee & chat with me
+          <div className="z-20 p-6 sm:p-8 w-[80rem] mt-1 text-center">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+            Your ideas, my code - let&apos;s talk
             </h1>
-            <p className="xl:block hidden text-sm text-gray-400 mb-8">
-              We&apos;re here to help! Drop us a message and we&apos;ll get back
-              to you soon.
+            <p className="hidden md:block text-base text-gray-400 mb-8">
+              Send me a message and I&apos;ll get back to you shortly.
             </p>
 
             <div className="flex  flex-col xl:mt-16 md:px-2 md:flex-row md:py-5">
@@ -157,6 +156,9 @@ export default function Page() {
                   </div>
                 </SlideIn>
               </div>
+              <p className="block md:hidden text-sm text-gray-400 mb-4">
+              Send me a message and I&apos;ll get back to you shortly.
+            </p>
                 <form
                   onSubmit={handleSubmit(onValidSubmit)}
                   className="space-y-4 text-start text-black flex md:w-1/2 p-4 rounded-xl flex-col"

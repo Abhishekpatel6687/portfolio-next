@@ -11,39 +11,31 @@ import { motion } from "framer-motion";
 interface Course {
   id: number;
   title: string;
-  slug: string;
   description: string;
-  price: number;
-  instructor: string;
-  category: string;
-  isFeatured: boolean;
   image: string;
 }
-
 const About = () => {
-  const featuredCourses = courseData.courses.filter(
-    (course: Course) => course.isFeatured
-  );
-
+  const featuredCourses = courseData.courses;
   return (
-    <div className="bg-green-50 relative overflow-hidden">
+    <div className="bg-green-50 relative ">
       {/* Multimedia only on md+ screens */}
-      <div className="hidden md:flex justify-start z-50 h-full items-end absolute">
+      <div className="hidden py-2 md:flex justify-start z-50 h-full items-end absolute">
         <Multimedia />
       </div>
 
       {/* Page link hidden on small screens to avoid overlap */}
-      <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
+      <div className=" text-black inset-x-0 bottom-0  z-30 absolute flex justify-end h-full items-center">
         <PageLink id={2} />
       </div>
 
       {/* Headings */}
+    
       <div className="pt-12 text-center px-2">
-        <h2 className="text-lg text-teal-800 font-semibold tracking-wide">
-          I Know that Good Design
+        <h2 className=" text-lg sm:text-xl text-teal-800 font-semibold tracking-wide">
+        My Tech Stack
         </h2>
-        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black">
-          means Good Business
+        <p className=" mt-0 md:mt-2 text-xl sm:text-2xl md:text-3xl leading-8 font-extrabold tracking-tight text-black">
+        Technologies I Love to Work With
         </p>
       </div>
 
@@ -57,7 +49,7 @@ const About = () => {
                 variants={cardVariants}
                 className="flex justify-center"
               >
-                <BackgroundGradient className="flex flex-col rounded-[22px] z-50 dark:bg-white overflow-hidden h-full max-w-72 w-full">
+                <BackgroundGradient className="flex flex-col rounded-[22px] z-30 dark:bg-white overflow-hidden h-full max-w-72 w-full">
                   <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
                     <Image
                       src={course.image || "/logoImage/react.png"}
@@ -72,7 +64,6 @@ const About = () => {
                     <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow mb-4">
                       {course.description}
                     </p>
-                    {/* <Link className="text-black" href={`/courses/${course.slug}`}>Learn More</Link> */}
                   </div>
                 </BackgroundGradient>
               </motion.div>

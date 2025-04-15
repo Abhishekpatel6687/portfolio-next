@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import Navbar from "@/components/Navbar";
+import Navbar1 from "@/components/Navbar1";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
       >
         <div className="relative w-full flex items-center justify-center ">
-       {/* <Navbar/>  */}
+       <Navbar1/> 
         </div>
         {children}
       </body>

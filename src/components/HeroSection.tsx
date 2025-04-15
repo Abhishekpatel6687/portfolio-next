@@ -3,20 +3,32 @@ import React, { useState, useEffect, useMemo } from "react";
 import SlideIn from "./SlideIn";
 import Image from "next/image";
 import { motion } from "framer-motion";
-// import { Button } from "./ui/moving-border";
+import { Button } from "./ui/moving-border";
 import { Spotlight } from "./ui/Spotlight";
 import Multimedia from "./Multimedia";
 import PageLink from "./PageLink";
 
 const textColor = [
-  { id: 0, color: "text-red-400" },
-  { id: 1, color: "text-green-400" },
-  { id: 2, color: "text-yellow-400" },
+  { id: 0, color: "text-pink-400" },
+  { id: 1, color: "text-blue-400" },
+  { id: 2, color: "text-red-400" },
+  { id: 3, color: "text-purple-400" },
+  { id: 4, color: "text-green-400" },
+  { id: 5, color: "text-orange-400" },
+  { id: 6, color: "text-yellow-400" },
 ];
 
 const HeroSection = () => {
   const profession = useMemo(
-    () => ["I am React Developer", "I am Designer", "I am Photographer"],
+    () => [
+      "I am a Frontend Web Developer.",
+      "I build responsive UIs.",
+      "I create modern web pages.",
+      "I am a React.js Expert.",
+      "I craft clean & functional designs.",
+      "I develop pixel-perfect websites.",
+      "I love building with Tailwind CSS.",
+    ],
     []
   );
   const [index, setIndex] = useState(0);
@@ -27,6 +39,17 @@ const HeroSection = () => {
   const currentColor =
     textColor.find((item) => item.id === index)?.color || "text-gray-700";
   // console.log(currentColor, "currentColor");
+
+  const downloadResume = () => {
+    
+  window.open("/resume/AbhishekPatel.pdf", "_blank");
+    const link = document.createElement("a");
+    link.href = "/resume/AbhishekPatel.pdf";
+    link.download = "Abhishek_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   useEffect(() => {
     const currentText = profession[index];
@@ -41,9 +64,9 @@ const HeroSection = () => {
           setDisplayText("");
           setCharIndex(0);
           setIndex((prevIndex) => (prevIndex + 1) % profession.length);
-        }, 1500);
+        }, 1000);
       }
-    }, 100);
+    }, 10);
 
     return () => clearTimeout(timeout);
   }, [charIndex, index]);
@@ -53,7 +76,7 @@ const HeroSection = () => {
         className="-top-40 left-0 md:left-60 md:-top-20 z-50"
         fill="green"
       />
-      <div className="hidden md:flex justify-start z-50 h-full  items-end absolute">
+      <div className="hidden py-2 md:flex justify-start z-50 h-full  items-end absolute">
         <Multimedia />
       </div>
       <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">
@@ -72,27 +95,33 @@ const HeroSection = () => {
         </div>
 
         <div className="hidden md:block w-16 h-16 bg-gradient-to-r from-green-100 to-white rounded-full md:ml-[20rem] lg:ml-[36rem] shadow-xl md:mb-20" />
-        <div className="flex justify-center xs:mt-6">
+        <div className="flex justify-center mt-6">
           <div className="w-4 h-4 bg-gradient-to-r from-green-100 to-white rounded-full mr-1 shadow-md" />
           <SlideIn direction="right">
             <h1 className="text-xl lg:text-3xl font-bold text-black">Hello,</h1>
           </SlideIn>
 
           <SlideIn direction="right">
-            <h1 className="xs:mt-5 lg:mt-7 text-4xl lg:text-5xl font-bold text-green-800">
+            <h1 className="mt-5 lg:mt-8 text-4xl lg:text-5xl font-bold text-green-800">
               I am Abhishek <br />
-
-
-              <span className="text-2xl relative top-[-20px]">
+              <div className="text-2xl relative w-64 sm:w-96 md:w-64 lg:w-[21.1rem] -mt-2 h-20">
                 <div
-                  className={`${currentColor} text-2xl font-semibold text-start mt-6 h-10`}
+                  className={`${currentColor} text-sm sm:text-lg lg:text-xl font-semibold text-start -ml-1 whitespace-normal break-words p-2 h-20`}
                 >
-                  {/* <div className=`${index === 0 ? "bg-red-800" :"bg-green-700"}, "text-2xl text-red-700 font-semibold text-start mt-6 h-10"`> */}
                   {displayText}
                   <span className="animate-pulse">|</span>
                 </div>
-              </span>
+              </div>
             </h1>
+        <div className=" -mt-8 md:mt-0 mb-6 md:mb-0">
+        <Button
+        borderRadius="1.75rem"
+        onClick={downloadResume}
+        className="bg-balck cursor-pointer z-50 dark:bg-green-700 text-white dark:text-white border-neutral-200 dark:border-blue-900 h-9 w-32 md:h-10 md:w-36"
+      >
+        Resume
+      </Button>
+    </div>
           </SlideIn>
         </div>
 
@@ -100,7 +129,7 @@ const HeroSection = () => {
         <div className="hidden md:block w-8 h-8 bg-gradient-to-r from-green-100 to-white rounded-full md:ml-[18rem] lg:ml-[28rem] mt-20 shadow-lg" />
       </div>
 
-      <div className="relative w-full md:w-[56%] flex justify-center md:block">
+      <div className="relative w-full mt-0 md:mt-6   md:w-[56%] flex justify-center md:block">
         <div className="w-20 h-20 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-gradient-to-r from-green-100 to-white rounded-full ml-[26rem] md:ml-[26rem] lg:ml-[44rem] shadow-2xl absolute" />
         <SlideIn direction="left">
           <motion.div
@@ -132,13 +161,13 @@ const HeroSection = () => {
               repeat: Infinity,
             }}
           >
-            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-full shadow-2xl absolute ml-[-10.8rem] sm:ml-[-12rem] md:ml-[19.6rem] lg:ml-[28rem] mt-28 md:mt-[13rem] lg:mt-[16rem]">
+            <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-white rounded-full shadow-2xl absolute ml-[-10.8rem] sm:ml-[-12rem] md:ml-[19.6rem] lg:ml-[28rem] mt-28 md:mt-[13rem] lg:mt-[16rem]">
               <Image
-                src="/logoImage/js.png"
+                src="/logoImage/javascript1.png"
                 alt="JavaScript Logo"
                 width={56}
-                height={56}
-                className="w-14 h-14 md:w-24 md:h-20 lg:w-16 lg:h-20 md:pr-3 lg:pr-0 -mt-1 md:mt-[-0.8rem] lg:ml-2 lg:mt-[-0.4rem]"
+                height={66}
+                className="w-11 h-11 md:w-14 md:h-14 lg:w-[3.8rem] lg:h-16  "
               />
             </div>
           </motion.div>

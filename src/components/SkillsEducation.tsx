@@ -6,16 +6,16 @@ import SlideIn from "./SlideIn";
 
 const skills = [
   { id: 1, name: "HTML", image: "/logoImage/html.png" },
-  { id: 2, name: "CSS", image: "/logoImage/cssLogo.png" },
-  { id: 3, name: "JAVASCRIPT", image: "/logoImage/jsLogo.png" },
-  { id: 4, name: "REDUX", image: "/logoImage/redux.png" },
-  { id: 5, name: "TAILWIND CSS", image: "/logoImage/tailwind1.png" },
-  { id: 6, name: "GIT & GITHUB", image: "/logoImage/git1.png" },
-  { id: 7, name: "TYPESCRIPT", image: "/logoImage/typeScript1.png" },
-  { id: 8, name: "MATERIAL UI", image: "/logoImage/react.png" },
-  { id: 9, name: "REACT", image: "/logoImage/reactLogo.png" },
-  { id: 10, name: "SCSS", image: "/logoImage/reactLogo1.png" },
-  { id: 11, name: "NEXT JS", image: "/logoImage/reactreact.png" },
+  { id: 2, name: "CSS", image: "/logoImage/css.png" },
+  { id: 3, name: "SCSS", image: "/logoImage/scss1.png" },
+  { id: 4, name: "JAVASCRIPT", image: "/logoImage/javascript1.png" },
+  { id: 5, name: "REACT", image: "/logoImage/react.png" },
+  { id: 6, name: "REDUX", image: "/logoImage/redux.png" },
+  { id: 7, name: "TAILWIND CSS", image: "/logoImage/tailwind1.png" },
+  { id: 8, name: "MATERIAL UI", image: "/logoImage/mui1.webp" },
+  { id: 9, name: "NEXT JS", image: "/logoImage/nextjs.png" },
+  { id: 10, name: "TYPESCRIPT", image: "/logoImage/typeScript1.png" },
+  { id: 11, name: "GIT & GITHUB", image: "/logoImage/git1.png" },
 ];
 
 const education = [
@@ -53,8 +53,8 @@ const education = [
 
 const SkillsEducation = () => {
   return (
-    <div className="min-h-min w-full overflow-x-hidden bg-green-200 relative text-black">
-    <div className="hidden md:flex justify-start z-50 h-full  items-end absolute">
+    <div className="min-h-screen w-full overflow-x-hidden bg-green-200 relative text-black">
+    <div className="hidden py-2 md:flex justify-start z-50 h-full  items-end absolute">
       <Multimedia />
         </div>
         <div className=" text-black inset-x-0 bottom-0 z-30 absolute flex justify-end h-full items-center">

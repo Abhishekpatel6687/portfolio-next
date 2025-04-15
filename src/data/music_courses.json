@@ -1,119 +1,65 @@
 {
     "courses": [
-        {
-            "id": 1,
-            "title": "HTML",
-            "slug": "guitar-fundamentals",
-            "description": "Learn the basics of playing guitar with our comprehensive beginner courses.",
-            "price": 99.99,
-            "instructor": "John Doe",
-            "category": "Music",
-            "isFeatured": true,
-            "image": "/logoImage/html.png"
-        },
-        {
-            "id": 2,
-            "title": "CSS",
-            "slug": "python-programming-101",
-            "description": "Master the foundations of Python programming for beginners.",
-            "price": 79.99,
-            "instructor": "Alice Smith",
-            "category": "Programming",
-            "isFeatured": true,
-            "image": "/logoImage/cssLogo.png"
-        },
-        {
-            "id": 3,
-            "title": "JAVASCRIPT",
-            "slug": "digital-marketing-basics",
-            "description": "Explore the essentials of SEO, social media, and content marketing.",
-            "price": 59.99,
-            "instructor": "Mark Lee",
-            "category": "Marketing",
-            "isFeatured": true,
-            "image": "/logoImage/jsLogo.png"
-        },
-        {
-            "id": 4,
-            "title": "REACT",
-            "slug": "photography-for-beginners",
-            "description": "Learn how to take stunning photos with any camera.",
-            "price": 49.99,
-            "instructor": "Jane Cooper",
-            "category": "Photography",
-            "isFeatured": true,
-            "image": "/logoImage/reactreact.png"
-        },
-        {
-            "id": 5,
-            "title": "REDUX",
-            "slug": "personal-finance-mastery",
-            "description": "Develop strategies to save, invest, and grow your wealth.",
-            "price": 89.99,
-            "instructor": "Robert King",
-            "category": "Finance",
-            "isFeatured": true,
-            "image": "/logoImage/redux1.png"
-        },
-        {
-            "id": 6,
-            "title": "TAILWIND",
-            "slug": "yoga-for-stress-relief",
-            "description": "Reduce stress and enhance well-being with easy yoga techniques.",
-            "price": 29.99,
-            "instructor": "Sophia White",
-            "category": "Health & Wellness",
-            "isFeatured": true,
-            "image": "/logoImage/tailwind1.png"
-        },
-        {
-            "id": 7,
-            "title": "Next.js",
-            "slug": "creative-writing-workshop",
-            "description": "Unlock your creativity and craft compelling stories.",
-            "price": 69.99,
-            "instructor": "Emily Clark",
-            "category": "Writing",
-            "isFeatured": true,
-            "image": "/logoImage/nextjs.png"
-
-        },
-        {
-            "id": 8,
-            "title": "Sass",
-            "slug": "creative-writing-workshop",
-            "description": "Unlock your creativity and craft compelling stories.",
-            "price": 69.99,
-            "instructor": "Emily Clark",
-            "category": "Writing",
-            "isFeatured": true,
-            "image": "/logoImage/sass1.png"
-
-        },
-        {
-            "id": 9,
-            "title": "TypeScript",
-            "slug": "creative-writing-workshop",
-            "description": "Unlock your creativity and craft compelling stories.",
-            "price": 69.99,
-            "instructor": "Emily Clark",
-            "category": "Writing",
-            "isFeatured": true,
-            "image": "/logoImage/typeScript1.png"
-
-        },
-        {
-            "id": 10,
-            "title": "GIT & GITHUB",
-            "slug": "creative-writing-workshop",
-            "description": "Unlock your creativity and craft compelling stories.",
-            "price": 69.99,
-            "instructor": "Emily Clark",
-            "category": "Writing",
-            "isFeatured": true,
-            "image": "/logoImage/git1.png"
-
-        }
-        
+      {
+        "id": 1,
+        "title": "HTML",
+        "description": "Learn the foundation of every website with HTML — structure your content like a pro.",
+        "image": "/logoImage/html.png"
+      },
+      {
+        "id": 2,
+        "title": "CSS",
+        "description": "Master modern styling techniques with CSS, Flexbox, and Grid — make your UI shine.",
+        "image": "/logoImage/cssLogo.png"
+      },
+      {
+        "id": 3,
+        "title": "JAVASCRIPT",
+        "description": "Build dynamic and interactive web experiences using JavaScript — the language of the web.",
+        "image": "/logoImage/jsLogo.png"
+      },
+      {
+        "id": 4,
+        "title": "REACT",
+        "description": "Learn to build fast and interactive UIs using React — the most popular frontend library.",
+        "image": "/logoImage/reactreact.png"
+      },
+      {
+        "id": 5,
+        "title": "REDUX",
+        "description": "Manage complex application state easily with Redux — the ultimate state management tool.",
+        "image": "/logoImage/redux1.png"
+      },
+      {
+        "id": 6,
+        "title": "TAILWIND",
+        "description": "Style your application faster with Tailwind CSS — a utility-first framework for custom design.",
+        "image": "/logoImage/tailwind1.png"
+      },
+      {
+        "id": 7,
+        "title": "Next.js",
+        "description": "Build full-stack web apps with Next.js — powerful routing, SEO, and server-side rendering.",
+        "image": "/logoImage/nextjs.png"
+      },
+      {
+        "id": 8,
+        "title": "Scss",
+        "description": "Write cleaner and modular CSS with SCSS — add variables, nesting, and more to your styles.",
+        "image": "/logoImage/scss1.png"
+      },
+      {
+        "id": 9,
+        "title": "TypeScript",
+        "description": "Write safer JavaScript using TypeScript — with static typing and better developer tooling.",
+        "image": "/logoImage/typeScript1.png"
+      },
+      {
+        "id": 10,
+        "title": "GIT & GITHUB",
+        "description": "Track your code and collaborate like a pro using Git and GitHub — essential for all developers.",
+        "image": "/logoImage/git1.png"
+      }
     ]
-}
+  }
+  

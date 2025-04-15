@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { PinContainer } from "./ui/3d-pin";
 import Multimedia from "./Multimedia";

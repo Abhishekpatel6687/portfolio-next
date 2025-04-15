@@ -19,18 +19,17 @@ const textColor = [
 ];
 
 const HeroSection = () => {
-  const profession = useMemo(
-    () => [
-      "I am a Frontend Web Developer.",
-      "I build responsive UIs.",
-      "I create modern web pages.",
-      "I am a React.js Expert.",
-      "I craft clean & functional designs.",
-      "I develop pixel-perfect websites.",
-      "I love building with Tailwind CSS.",
-    ],
-    []
-  );
+
+  const profession = [
+    "I am a Frontend Web Developer.",
+    "I build responsive UIs.",
+    "I create modern web pages.",
+    "I am a React.js Expert.",
+    "I craft clean & functional designs.",
+    "I develop pixel-perfect websites.",
+    "I love building with Tailwind CSS.",
+  ];
+  
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [charIndex, setCharIndex] = useState(0);

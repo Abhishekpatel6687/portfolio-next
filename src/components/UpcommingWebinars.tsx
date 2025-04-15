@@ -87,20 +87,20 @@ const projects: Project[] = [
 ];
 
 export default function UpcommingWebinars() {
-  const projectSkills = ["React & CSS", "React & Tailwind", "React & Scss", "All"];
+  // const projectSkills = ["React & CSS", "React & Tailwind", "React & Scss", "All"];
 
-  const [activeButton, setActiveButton] = useState("All");
-  const [showProject, setShowProject] = useState<Project[]>(projects);
+  // const [activeButton, setActiveButton] = useState("All");
+  // const [showProject, setShowProject] = useState<Project[]>(projects);
 
-  const handleProject = (item: string) => {
-    const projectView = projects.filter((data) => data.skills === item);
-    if (item === "All") {
-      setShowProject(projects);
-    } else {
-      setShowProject(projectView);
-    }
-    setActiveButton(item);
-  };
+  // const handleProject = (item: string) => {
+  //   const projectView = projects.filter((data) => data.skills === item);
+  //   if (item === "All") {
+  //     setShowProject(projects);
+  //   } else {
+  //     setShowProject(projectView);
+  //   }
+  //   setActiveButton(item);
+  // };
 
   return (
     <div className="min-h-screen w-full  gap-4 relative bg-green-100">
@@ -130,7 +130,7 @@ export default function UpcommingWebinars() {
           ))}
         </div>*/}
         <div className="min-h-screen w-full flex flex-wrap justify-evenly mb-6 px-8 py-4 md:mt-8">
-          {showProject.map((item) => {
+          {projects.map((item) => {
             return (
               <div key={item.id} className="mb-20">
                 <PinContainer

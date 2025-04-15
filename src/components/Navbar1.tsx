@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { FloatingDock } from "./ui/floating-dock";
 import {
   IconMessage2 ,
@@ -8,12 +8,9 @@ import {
   IconFolderCode ,
   IconHome,
   IconAddressBook ,
-
 } from "@tabler/icons-react";
-import Image from "next/image";
 
-const Navbar1 = ({ className }: { className?: string }) => {
-  const [active, setActive] = useState<string | null>(null);
+const Navbar1 = () => {
 
   const links = [
     {

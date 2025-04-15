@@ -1,6 +1,5 @@
 "use client";
 import { useRouter } from "next/navigation";
-// import React, { useState, useEffect } from "react";
 
 const active = [
   { id: 1, route: "/" }, 

@@ -13,7 +13,7 @@ type WavyBackgroundProps = {
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
-  [key: string]: unknown; // ✅ Replace 'any' with 'unknown'
+  [key: string]: unknown; 
 };
 
 export const WavyBackground = ({

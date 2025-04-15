@@ -99,7 +99,6 @@ const SkillsEducation = () => {
        
         <div className="w-full lg:w-1/2 flex py-6 md:px-5 lg:px-0">
           <div className="w-[0.1rem] lg:h-full ml-2 bg-black relative rounded-full">
-            {/* <div className="w-4 h-4 mt-4 bg-white rounded-full absolute left-1/2 -translate-x-1/2 top-0" /> */}
           </div>
           <div className="flex flex-col w-full h-full gap-6">
             {education.map((i) => (

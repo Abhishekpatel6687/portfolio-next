@@ -60,30 +60,6 @@ const projects: Project[] = [
     image: "/projects/hospital.png",
     skills: "React & Tailwind",
   },
-  // {
-  //   id: 6,
-  //   projectName: "Weather App",
-  //   link: "https://todo-task010.netlify.app/",
-  //   description: "A weather forecasting app using OpenWeather API.",
-  //   image: "/projects/todo.png",
-  //   skills: "React Js",
-  // },
-  // {
-  //   id: 7,
-  //   projectName: "Weather App",
-  //   link: "https://enchanting-gumption-a6ac06.netlify.app/",
-  //   description: "A weather forecasting app using OpenWeather API.",
-  //   image: "/projects/hospital.png",
-  //   skills: "React Js",
-  // },
-  // {
-  //   id: 8,
-  //   projectName: "Weather App",
-  //   link: "https://leafy-zabaione-426ebd.netlify.app/",
-  //   description: "A weather forecasting app using OpenWeather API.",
-  //   image: "/projects/portfolio.png",
-  //   skills: "React.js  & custom CSS",
-  // },
 ];
 
 export default function Projects() {

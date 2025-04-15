@@ -9,7 +9,6 @@ import React, {
   useEffect,
 } from "react";
 
-// Context for mouse enter state
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
 >(undefined);
@@ -149,7 +148,6 @@ export const CardItem = ({
   );
 };
 
-// useMouseEnter hook
 export const useMouseEnter = () => {
   const context = useContext(MouseEnterContext);
   if (context === undefined) {

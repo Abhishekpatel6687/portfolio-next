@@ -4,7 +4,6 @@ const footer1 = () => {
     <footer className="bg-gradient-to-b to-black   from-[#032210] text-gray-400 py-12">
 
     <div className="max-w-full py-4 px-12 gap-8  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
-      {/* <div className="w-auto bg-pink-950"> */}
       <div>
         <h2 className=" text-white text-lg font-semibold py-2"> About Us</h2>
         <p>achivements</p>
@@ -28,7 +27,6 @@ const footer1 = () => {
         <p>easy to larn</p>
 
       </div>
-      {/* </div> */}
     </div>
       <p className="text-center text-xs pt-8">@ 2025 FrontEnd Developer In React.js</p>
     </footer>

@@ -30,7 +30,6 @@ export const FloatingDock = ({
   );
 };
 
-// 🌐 Mobile Version
 const FloatingDockMobile = ({
   items,
   className,
@@ -90,7 +89,6 @@ const FloatingDockMobile = ({
   );
 };
 
-// 🖥️ Desktop Version
 const FloatingDockDesktop = ({
   items,
   className,
@@ -116,7 +114,6 @@ const FloatingDockDesktop = ({
   );
 };
 
-// 🧊 Icon with Hover Animation
 function IconContainer({
   mouseX,
   title,

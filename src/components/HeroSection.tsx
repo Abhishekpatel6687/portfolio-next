@@ -33,11 +33,9 @@ const HeroSection = () => {
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
-  // console.log(index, "displayText");
 
   const currentColor =
     textColor.find((item) => item.id === index)?.color || "text-gray-700";
-  // console.log(currentColor, "currentColor");
 
   const downloadResume = () => {
     
@@ -55,7 +53,6 @@ const HeroSection = () => {
 
     const timeout = setTimeout(() => {
       if (charIndex < currentText.length) {
-        // console.log(charIndex,'charIndex')
         setDisplayText((prev) => prev + currentText.charAt(charIndex));
         setCharIndex(charIndex + 1);
       } else {

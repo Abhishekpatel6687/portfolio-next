@@ -39,12 +39,6 @@ const Multimedia = () => {
       designation: "Marketing Specialist",
       image: "formkit:facebook",
     },
-    // {
-    //   id: 6,
-    //   name: "Michael Wilson",
-    //   designation: "DevOps Engineer",
-    //   image:"https://images.unsplash.com/photo-1544717305-996b815c338c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    // },
   ];
   return (
     <div className="flex gap-1 mx-2 flex-col text-black">

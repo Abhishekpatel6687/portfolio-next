@@ -1,5 +1,4 @@
 "use client";
-// import Link from "next/link";
 import Image from "next/image";
 import courseData from "../data/music_courses.json";
 import { BackgroundGradient } from "./ui/background-gradient";
@@ -18,18 +17,14 @@ const About = () => {
   const featuredCourses = courseData.courses;
   return (
     <div className="bg-green-50 relative ">
-      {/* Multimedia only on md+ screens */}
       <div className="hidden py-2 md:flex justify-start z-50 h-full items-end absolute">
         <Multimedia />
       </div>
 
-      {/* Page link hidden on small screens to avoid overlap */}
       <div className=" text-black inset-x-0 bottom-0  z-30 absolute flex justify-end h-full items-center">
         <PageLink id={2} />
       </div>
 
-      {/* Headings */}
-    
       <div className="pt-12 text-center px-2">
         <h2 className=" text-lg sm:text-xl text-teal-800 font-semibold tracking-wide">
         My Tech Stack
@@ -39,7 +34,6 @@ const About = () => {
         </p>
       </div>
 
-      {/* Cards Section */}
       <div className="py-12">
         <SlideIn direction="stagger">
           <div className="grid z-50 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xxl:grid-cols-8 px-10 md:px-20 gap-8 justify-center">

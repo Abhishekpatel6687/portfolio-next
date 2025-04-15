@@ -20,10 +20,10 @@ export const Meteors = ({
             className
           )}
           style={{
-            top: `${Math.random() * 100}vh`, // Random position from top to bottom of the screen
-            left: `${Math.random() * 100}vw`, // Random position from left to right of the screen
-            animationDelay: `${Math.random() * (0.8 - 0.2) + 0.2}s`, // Random animation delay
-            animationDuration: `${Math.floor(Math.random() * (10 - 2) + 2)}s`, // Random animation duration
+            top: `${Math.random() * 100}vh`, 
+            left: `${Math.random() * 100}vw`, 
+            animationDelay: `${Math.random() * (0.8 - 0.2) + 0.2}s`, 
+            animationDuration: `${Math.floor(Math.random() * (10 - 2) + 2)}s`,
           }}
         ></span>
       ))}

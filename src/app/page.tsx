@@ -9,8 +9,7 @@ import Contact from "@/components/Contact";
 
 const page = () => {
   return (
-    // bg-grid-white/[0.02]
-    <main className="min-h-screen bg-backColor antialiased scroll-smooth">
+    <main className="min-h-screen bg-backColor antialiased">
       <div id="/">
         <HeroSection />
       </div>

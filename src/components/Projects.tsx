@@ -86,7 +86,7 @@ const projects: Project[] = [
   // },
 ];
 
-export default function UpcommingWebinars() {
+export default function Projects() {
   // const projectSkills = ["React & CSS", "React & Tailwind", "React & Scss", "All"];
 
   // const [activeButton, setActiveButton] = useState("All");
@@ -113,7 +113,7 @@ export default function UpcommingWebinars() {
       <div className="flex flex-wrap justify-center  pt-12">
         <div className="flex flex-col items-center">
       <h1 className=" text-2xl sm:text-4xl font-bold text-green-800 mb-2"> My Projects</h1>
-          <h1 className="text-black text-center text-sm sm:text-lg px-4">Explore my collection of creative and responsive projects.</h1>
+          <h1 className="text-gray-600 text-center text-sm sm:text-lg px-4">Explore my collection of creative and responsive projects.</h1>
         </div>
          {/*  <div className="w-full z-50 bg-red-400 sm:max-w-[34rem] md:max-w-[40rem] grid grid-cols-4 gap-0 lg:gap-4 px-2 sm:px-0 p-0 sm:p-4">
         {projectSkills.map((item, index) => (

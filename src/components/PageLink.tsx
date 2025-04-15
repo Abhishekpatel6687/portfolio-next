@@ -5,11 +5,11 @@ import { useRouter } from "next/navigation";
 const active = [
   { id: 1, route: "/" }, 
   { id: 2, route: "about" }, 
-  { id: 3, route: "upcommingWebinars" }, 
+  { id: 3, route: "projects" }, 
   { id: 4, route: "skillsEducation" }, 
   { id: 5, route: "contact" }, 
   // { id: 6, route: "movingCard" },
-  // { id: 7, route: "instructors" },
+  // { id: 7, route: "footer" },
 ];
 interface PageLinkProps {
   id: number;

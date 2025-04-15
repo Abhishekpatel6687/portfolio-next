@@ -12,7 +12,7 @@ const ThankYouPage = () => {
           Your form has been successfully submitted. We&apos;ll get back to you shortly.
         </p>
 
-        <Link href="/">
+        <Link href="#home">
           <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition-all">
             Go Back Home
           </button>

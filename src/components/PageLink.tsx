@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 
 const active = [
-  { id: 1, route: "/" }, 
+  { id: 1, route: "home" }, 
   { id: 2, route: "about" }, 
   { id: 3, route: "projects" }, 
   { id: 4, route: "skillsEducation" }, 

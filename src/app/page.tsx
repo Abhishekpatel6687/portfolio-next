@@ -10,25 +10,25 @@ import Contact from "@/components/Contact";
 const page = () => {
   return (
     <main className="min-h-screen bg-backColor antialiased">
-      <div id="/">
-        <HeroSection />
+      <div id="home" className="scroll-mt-20">
+        <HeroSection  />
       </div>
-      <div id="about">
+      <div id="about" className="scroll-mt-20">
         <About />
       </div>
-      <div id="projects">
+      <div id="projects" className="scroll-mt-20">
         <Projects />
       </div>
-      <div id="skillsEducation">
+      <div id="skillsEducation" className="scroll-mt-20">
         <SkillsEducation />
       </div>
-      <div id="movingCard">
+      <div id="movingCard" className="scroll-mt-20">
         <MovingCard />
       </div>
-      <div id="contact">
+      <div id="contact" className="scroll-mt-20">
         <Contact />
       </div>
-      <div id="footer">
+      <div id="footer" className="scroll-mt-20">
         <Footer />
       </div>
       {/* <div id="footer1">

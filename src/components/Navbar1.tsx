@@ -11,7 +11,7 @@ const Navbar1 = ({ className }: { className?: string }) => {
       className={cn("fixed top-6 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-        <Link href={"/"}>
+        <Link href={"home"}>
           <MenuItem
             setActive={setActive}
             active={active}

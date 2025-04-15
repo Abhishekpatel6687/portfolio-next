@@ -73,7 +73,7 @@ export const AnimatedTooltip = ({ items }: { items: TooltipItem[] }) => {
                   className="absolute -top-10 -left-16 translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-1"
                 >
                   <div className="font-bold text-white relative z-30 text-base">
-                    <Link href={item.link || "/"}>{item.name}</Link>
+                    <Link href={item.link || "#home"}>{item.name}</Link>
                   </div>
                 </motion.div>
               )}

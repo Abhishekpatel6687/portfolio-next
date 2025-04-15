@@ -16,7 +16,7 @@ const Navbar = () => {
     {
       title: "Home",
       icon: <IconHome className="h-full w-full text-gray-600" />,
-      href: "/",
+      href: "#home",
     },
     {
       title: "About",

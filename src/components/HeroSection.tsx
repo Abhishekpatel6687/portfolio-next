@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import SlideIn from "./SlideIn";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Button } from "./ui/moving-border";
 import { Spotlight } from "./ui/Spotlight";
 import Multimedia from "./Multimedia";
@@ -128,14 +127,6 @@ const HeroSection = () => {
       <div className="relative w-full mt-0 md:mt-6   md:w-[56%] flex justify-center md:block">
         <div className="w-20 h-20 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-gradient-to-r from-green-100 to-white rounded-full ml-[26rem] md:ml-[26rem] lg:ml-[44rem] shadow-2xl absolute" />
         <SlideIn direction="left">
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{
-              duration: 1.5,
-              ease: "easeInOut",
-              repeat: Infinity,
-            }}
-          >
             <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex justify-center items-center shadow-2xl absolute ml-[-9rem] sm:ml-[-10rem] md:ml-[17rem] lg:ml-[24rem] mt-5 md:mt-[5rem]">
               <Image
                 src="/logoImage/react.png"
@@ -145,18 +136,9 @@ const HeroSection = () => {
                 className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16  "
               />
             </div>
-          </motion.div>
         </SlideIn>
 
         <SlideIn direction="left">
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{
-              duration: 1.5,
-              ease: "easeInOut",
-              repeat: Infinity,
-            }}
-          >
             <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-white rounded-full shadow-2xl absolute ml-[-10.8rem] sm:ml-[-12rem] md:ml-[19.6rem] lg:ml-[28rem] mt-28 md:mt-[13rem] lg:mt-[16rem]">
               <Image
                 src="/logoImage/javascript1.png"
@@ -166,7 +148,6 @@ const HeroSection = () => {
                 className="w-11 h-11 md:w-14 md:h-14 lg:w-[3.8rem] lg:h-16  "
               />
             </div>
-          </motion.div>
         </SlideIn>
 
         <SlideIn direction="inner">
@@ -182,14 +163,6 @@ const HeroSection = () => {
         </SlideIn>
 
         <SlideIn direction="left">
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{
-              duration: 1.5,
-              ease: "easeInOut",
-              repeat: Infinity,
-            }}
-          >
             <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex justify-center items-center shadow-2xl absolute ml-[-9rem] sm:ml-[-10rem] md:ml-[18rem] lg:ml-[23.8rem] mt-52 md:mt-[-2.4rem] lg:mt-[-3.8rem]">
               <Image
                 src="/logoImage/redux.png"
@@ -199,7 +172,6 @@ const HeroSection = () => {
                 className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16  "
               />
             </div>
-          </motion.div>
         </SlideIn>
 
         <div className="w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-green-100 to-white rounded-full shadow-2xl absolute ml-[21rem] sm:ml-[26rem] mt-52 md:mt-14 md:ml-[23rem] lg:mt-6 lg:ml-[42rem]" />

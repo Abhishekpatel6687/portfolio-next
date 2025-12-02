@@ -19,32 +19,38 @@ const skills = [
 ];
 
 const education = [
-  {
+   {
     id: 1,
-    date: "Dec 2023 - Present",
+    date: "May 2025 - Present",
+    role: "Full-time Job",
+    description: "Avenir Innovative Solutions Pvt. Ltd.",
+  },
+  {
+    id: 2,
+    date: "Dec 2023 - March 2025",
     role: "Full-time Internship →  Job",
     description: "Ibest Multiple Works Pvt. Ltd.",
   },
   {
-    id: 2,
+    id: 3,
     date: "Feb 2023 - Nov 2023",
     role: "Summer Training",
     description: "Digicoders Technology Pvt. Ltd. (Lucknow)",
   },
   {
-    id: 3,
+    id: 4,
     date: "July 2019 - July 2023",
     role: "B.Tech in Computer Science and Technology",
     description: "Goel Institute of Technology and Management",
   },
   {
-    id: 4,
+    id: 5,
     date: "July 2018 - June 2019",
     role: "12th Standard",
     description: "Lucknow Model Public College",
   },
   {
-    id: 5,
+    id: 6,
     date: "July 2016 - June 2017",
     role: "10th Standard",
     description: "Lucknow Model Public College",

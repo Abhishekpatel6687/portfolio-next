@@ -38,9 +38,9 @@ const HeroSection = () => {
 
   const downloadResume = () => {
     
-  window.open("/resume/AbhishekPatel.pdf", "_blank");
+  window.open("/resume/AbhishekPatel(Resume).pdf", "_blank");
     const link = document.createElement("a");
-    link.href = "/resume/AbhishekPatel.pdf";
+    link.href = "/resume/AbhishekPatel(Resume).pdf";
     link.download = "Abhishek_Resume.pdf";
     document.body.appendChild(link);
     link.click();
